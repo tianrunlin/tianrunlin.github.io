@@ -8,7 +8,7 @@
   <meta name="description" content="自己或者访客想要了解你的博客已经多长运行时间，怎么办？这个可以通过当前时间减去博客建立时间来算出博客的运行时间，而博客建立时间可以通过存档中第一篇文章来查看（当然，不一定存档中的第一篇文章时间就是建博时间，要求博客建立当天就发表了博客）。这样就显得很麻烦了，我们可以通过js代码实现博客运行时间显示。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="显示自己博客已运行时间的JS代码">
-<meta property="og:url" content="http://yoursite.com/2012/10/22/blog-runtime-display/index.html">
+<meta property="og:url" content="http://www.tianrunlin.com/2012/10/22/blog-runtime-display/index.html">
 <meta property="og:site_name" content="田润林的博客">
 <meta property="og:description" content="自己或者访客想要了解你的博客已经多长运行时间，怎么办？这个可以通过当前时间减去博客建立时间来算出博客的运行时间，而博客建立时间可以通过存档中第一篇文章来查看（当然，不一定存档中的第一篇文章时间就是建博时间，要求博客建立当天就发表了博客）。这样就显得很麻烦了，我们可以通过js代码实现博客运行时间显示。">
 <meta property="og:updated_time" content="2015-06-13T04:30:18.458Z">
@@ -281,8 +281,8 @@
 <script language="JavaScript">//<![CDATA[ function HowLongSince(startyear, startmonth, startdate) {   var DaysInMonth = new Array(31,28,31,30,31,30,31,31,30,31,30,31);   var today = new Date()   var thisyear = today.getFullYear();   var thismonth = today.getMonth();   var thisdate = today.getDate();   mstart = new Date(startyear, startmonth, 1);   mend = new Date(thisyear, thismonth, 1);   ydiff = thisyear - mstart.getFullYear();   mdiff = thismonth - mstart.getMonth();   days1 = (mstart - new Date(startyear, startmonth - 1,startdate))/(24*60*60*1000) - 1;   days2 = (new Date(thisyear,thismonth,thisdate) - mend)/(24*60*60*1000) + 1;   dayst = days1 + days2;   if (dayst >= DaysInMonth[startmonth - 1])  {     mdiff += 1;     dayst -= DaysInMonth[startmonth - 1];   }   if (ydiff == 0 && mdiff == 0 && dayst == 0)     message = "今天";   else {     if (mdiff > 11) { mdiff = 0; ydiff++; }     if (mdiff < 0) { mdiff = mdiff + 12; ydiff--; }     message = (ydiff != 0 ? ydiff + " 年" : "");     message += (mdiff != 0 ? " " + mdiff + " 个月" : "");     if (ydiff != 0 && mdiff != 0) message += "又";     message += (dayst!=0 ? " " + dayst+" 天" : "");   }   return message; } //]]></script>**田润林的博客已经运行**:   <script language="JavaScript">document.write(HowLongSince(2012,6,25));  </script>
 
 <p>说明1<br><span style="color: blue; font-family: Georgia, Times New Roman, serif; font-size: xx-small;">Date(”</span><span style="color: red; font-family: Georgia, Times New Roman, serif; font-size: xx-small;">June, 25,2012</span><span style="color: blue; font-family: Georgia, Times New Roman, serif; font-size: xx-small;">“)</span><br><span style="color: blue; font-family: Georgia, Times New Roman, serif; font-size: xx-small;">HowLongSince(</span><span style="color: red; font-family: Georgia, Times New Roman, serif; font-size: xx-small;">2012,6,25</span><span style="color: blue; font-family: Georgia, Times New Roman, serif; font-size: xx-small;">)</span><br>中的时间必须替换为你自己的博客时间</p>
-<p>说明2<br>这段JS代码不提倡加入模板中，因为运行时间不需要在每个页面都显示，过多的js会降低整体加载速度。<br>可以加在某个具体的页面中，比如我的运行时间的JS代码就放在自己的<a href="http://www.tianrunlin.com/2012/10/blog-log.html" target="_blank" rel="external">博客日志</a>页面。</p>
-<div><br></div><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/" target="_blank" rel="external">田润林的博客</a></div>
+<p>说明2<br>这段JS代码不提倡加入模板中，因为运行时间不需要在每个页面都显示，过多的js会降低整体加载速度。<br>可以加在某个具体的页面中，比如我的运行时间的JS代码就放在自己的<a href="http://www.tianrunlin.com/2012/10/blog-log.html">博客日志</a>页面。</p>
+<div><br></div><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>
       
     </div>
     
@@ -331,11 +331,11 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="blog-runtime-display" data-title="显示自己博客已运行时间的JS代码" data-url="http://yoursite.com/2012/10/22/blog-runtime-display/"></div>
+	<div class="ds-thread" data-thread-key="blog-runtime-display" data-title="显示自己博客已运行时间的JS代码" data-url="http://www.tianrunlin.com/2012/10/22/blog-runtime-display/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
+	var duoshuoQuery = {short_name:"tianrunlin"};
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
