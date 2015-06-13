@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+  <title><![CDATA[田润林的博客]]></title>
+  <subtitle><![CDATA[运营推广、数据分析以及其他]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.tianrunlin.com//"/>
+  <updated>2015-06-13T04:30:18.461Z</updated>
+  <id>http://www.tianrunlin.com//</id>
+  
+  <author>
+    <name><![CDATA[田润林]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[让Blogger只显示摘要的方法]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/21/blogger-summary-auto-display/"/>
+    <id>http://www.tianrunlin.com/2012/12/21/blogger-summary-auto-display/</id>
+    <published>2012-12-21T15:00:00.000Z</published>
+    <updated>2015-06-13T04:30:18.461Z</updated>
+    <content type="html"><![CDATA[<p>让你的blog显示文章摘要，也就是每篇文章只显示预览。<br>首先下载模版并备份，然后<br>1、在HTML模板中加入以下代码：</p>
+<p>&nbsp;.post-body2{ BORDER-RIGHT: 0px; BORDER-TOP: 0px; OVERFLOW: hidden; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; HEIGHT: 150px; TEXT-OVERFLOW: ellipsis; } 2、找到&lt;p&gt;&lt;data:post.body&gt;&lt;/p&gt;改为以下代码： &lt;b:if cond=’data:blog.pageType == “item”‘&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;b:else/&gt; &lt;div class=’post-body2’&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;/div&gt;……&lt;p&gt; &lt;a expr:href=’data:post.url’ title=’阅读全文’&gt;&lt;b&gt;[阅读全文]&lt;/b&gt;&lt;/a&gt;&lt;/p&gt; &lt;/b:if&gt;<br><a id="more"></a></p>
+<p>这样以后发帖就不需要选择显示部分了，自动截取一部分显示出来。 *如果想要列表中不显示摘要，第一步可以省略，第二步改为：</p>
+<p>找到&lt;p&gt;&lt;data:post.body&gt;&lt;/p&gt;改为： &lt;b:if cond=’data:blog.pageType == “item”‘&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;/b:if&gt;</p>
+<p>效果见我的blog 注意：这个办法并非完全显示摘要，文章所有部分还是需要都下载下来，所以对速度并没有帮助，不过在blogger提供原生预览支持之前，我们不得不这样做，这个方法截取高度都一样，比较整齐，看起来还不错。</p>
+<p>转自：<a href="http://xcxxb.blogspot.com/2007/05/blogger.html" target="_blank" rel="external">http://xcxxb.blogspot.com/2007/05/blogger.html</a><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>让你的blog显示文章摘要，也就是每篇文章只显示预览。<br>首先下载模版并备份，然后<br>1、在HTML模板中加入以下代码：</p>
+<p>&nbsp;.post-body2{ BORDER-RIGHT: 0px; BORDER-TOP: 0px; OVERFLOW: hidden; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; HEIGHT: 150px; TEXT-OVERFLOW: ellipsis; } 2、找到&lt;p&gt;&lt;data:post.body&gt;&lt;/p&gt;改为以下代码： &lt;b:if cond=’data:blog.pageType == “item”‘&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;b:else/&gt; &lt;div class=’post-body2’&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;/div&gt;……&lt;p&gt; &lt;a expr:href=’data:post.url’ title=’阅读全文’&gt;&lt;b&gt;[阅读全文]&lt;/b&gt;&lt;/a&gt;&lt;/p&gt; &lt;/b:if&gt;<br>]]>
+    
+    </summary>
+    
+      <category term="blogger优化" scheme="http://www.tianrunlin.com/tags/blogger%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[末日微博]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/21/doomsday-weibo/"/>
+    <id>http://www.tianrunlin.com/2012/12/21/doomsday-weibo/</id>
+    <published>2012-12-21T14:23:00.000Z</published>
+    <updated>2015-06-13T04:30:18.463Z</updated>
+    <content type="html"><![CDATA[<p>1、末日始于日本大海啸，日本人提前十分钟知道末日来临，播音员紧急呼叫，保持镇静，穿好和服，到安全的地方聚集。中国中央电视台直播日本海啸，要国人不要信谣。欧洲开始狂欢，大街上到处都是男欢女爱，埃及人在金字塔前歌舞，美国总统宣布启动人类生命种子发射外星程序，同时发表讲演，认为生命会继续。<br><a id="more"></a></p>
+<p>2、末日景象续：上海开始骚乱，大量上海人驱车往江浙跑，但被江浙人阻拦，不允许上海户口的人进入江浙，广东深圳的人居然乱往香港跑，香港已经开始沉没！北京人疯狂往香山上爬，副部级以上干部被集中到八宝山。北京的公知们强烈要求末日之时启动政改，如果再不发选票，中国人民到了地狱里没面子。</p>
+<p>3、马英9强烈要求回到祖国怀抱，要求中央同意，中央总机接线员哭着回答，中央现在只剩下我在值班呢。马英9说，这太好了，你等着，我坐飞机过来帮你值班</p>
+<p>4、末日来临之际，上海人抱着家里细软与股票跑，北京人拿着户口本与房本跑，广东人把现金与好吃的带着跑，四川人带着辣椒、麻将跑，东北人拿着玉米棒子跑，山东人大葱转大饼跑，安徽人江西湖北人拿着几根红薯跑，亲，你会拿着什么跑？对了，藏人在那儿念经给全国人民超度。</p>
+<p>5、末日也有伟大之处，就是把全世界的贪官与独裁政府独裁党，也一举消灭光了。</p>
+<p>偶然看到的的，转自<a href="http://doomsday/" target="_blank" rel="external">吴祚来的网易微博</a><br>网易微博如网易新闻一样犀利啊，找时间上去看看去，这类言论估计新浪上不容易看到。</p>
+<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>1、末日始于日本大海啸，日本人提前十分钟知道末日来临，播音员紧急呼叫，保持镇静，穿好和服，到安全的地方聚集。中国中央电视台直播日本海啸，要国人不要信谣。欧洲开始狂欢，大街上到处都是男欢女爱，埃及人在金字塔前歌舞，美国总统宣布启动人类生命种子发射外星程序，同时发表讲演，认为生命会继续。<br>]]>
+    
+    </summary>
+    
+      <category term="时事新闻" scheme="http://www.tianrunlin.com/tags/%E6%97%B6%E4%BA%8B%E6%96%B0%E9%97%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[chrome插件：谷歌文档]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/19/chrome-extension-google-doc/"/>
+    <id>http://www.tianrunlin.com/2012/12/19/chrome-extension-google-doc/</id>
+    <published>2012-12-19T14:00:00.000Z</published>
+    <updated>2015-06-13T04:30:18.462Z</updated>
+    <content type="html"><![CDATA[<p><strong><span style="vertical-align: baseline; white-space: pre-wrap;">为了通过持续的更新来吸引蜘蛛，接下来我准备写一些水文。</span><br><span style="vertical-align: baseline; white-space: pre-wrap;">平时又没有时间，为了保持一定频率的更新，所以以后我将周末写的多篇博客设置成定时发布，比如我周末写了3篇，那么我就每隔2天的晚上10点发布，如果写了2篇，那么每隔2天的晚上10点发布博文。</span><span style="vertical-align: baseline;">以此达到</span><span style="vertical-align: baseline; white-space: pre-wrap;">让蜘蛛定时爬行的目的。</span></strong><br><strong><span style="white-space: pre-wrap;"><br></span><span style="vertical-align: baseline; white-space: pre-wrap;">首先，介绍一些chrome插件</span><br><span style="vertical-align: baseline; white-space: pre-wrap;">我第一个介绍的chrome插件是Google文档</span><br><span style="vertical-align: baseline; white-space: pre-wrap;">Google文档在线下载安装地址：<a href="https://chrome.google.com/webstore/detail/aohghmighlieiainnegkcijnfilokake" target="_blank" rel="external">https://chrome.google.com/webstore/detail/aohghmighlieiainnegkcijnfilokake</a></span></strong><br><a id="more"></a><strong><br><span style="vertical-align: baseline; white-space: pre-wrap;">安装以后，图标并不是出现在搜索框的右侧，而是在应用栏里，和chrome web store在一起（快捷键ctrl+T），如下图示：</span><br><span style="vertical-align: baseline; white-space: pre-wrap;"></span><span id="goog_650761839"></span><img src="https://lh5.googleusercontent.com/ZN0A7SvBYdQ9u3jBsgT5DXyPcP1QMglieLAF6xbQDysDRU4sKIxG6tCX72dBJFVkgMwF_Y542xppjDHqTc9bgbbd6zYLgio-1YhdI5GXjkt8hrKNlco" alt="" title="google文档插件"><span id="goog_650761840"></span><span style="vertical-align: baseline; white-space: pre-wrap;"></span><br><span style="vertical-align: baseline; white-space: pre-wrap;"></span><br><span style="vertical-align: baseline; white-space: pre-wrap;">好吧，这个插件给我的感觉就是一个快捷方式而已，比如我们可以直接打开谷歌云端硬盘（地址：</span></strong><a href="https://drive.google.com**" target="_blank" rel="external">https://drive.google.com**</a><span style="vertical-align: baseline; white-space: pre-wrap;">），然后创建文档，它们两者的效果并没有什么不同。</span><br><span style="vertical-align: baseline; white-space: pre-wrap;"></span><br><span style="vertical-align: baseline; white-space: pre-wrap;">最后，本篇博文就是在google文档插件上写的，然后通过谷歌文档界面右上角的共享按钮，添加到自己的博客发布邮箱发布的。同时还测试一下通过谷歌文档发布博客时，插入的图片的显示效果。</span><strong>
+</strong><span style="vertical-align: baseline; white-space: pre-wrap;"><br></span><strong>**<span style="vertical-align: baseline; white-space: pre-wrap;">更新：通过谷歌文档发布貌似有些问题，又换回去了。</span></strong><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><strong><span style="vertical-align: baseline; white-space: pre-wrap;">为了通过持续的更新来吸引蜘蛛，接下来我准备写一些水文。</span><br><span style="vertical-align: baseline; white-space: pre-wrap;">平时又没有时间，为了保持一定频率的更新，所以以后我将周末写的多篇博客设置成定时发布，比如我周末写了3篇，那么我就每隔2天的晚上10点发布，如果写了2篇，那么每隔2天的晚上10点发布博文。</span><span style="vertical-align: baseline;">以此达到</span><span style="vertical-align: baseline; white-space: pre-wrap;">让蜘蛛定时爬行的目的。</span></strong><br><strong><span style="white-space: pre-wrap;"><br></span><span style="vertical-align: baseline; white-space: pre-wrap;">首先，介绍一些chrome插件</span><br><span style="vertical-align: baseline; white-space: pre-wrap;">我第一个介绍的chrome插件是Google文档</span><br><span style="vertical-align: baseline; white-space: pre-wrap;">Google文档在线下载安装地址：<a href="https://chrome.google.com/webstore/detail/aohghmighlieiainnegkcijnfilokake">https://chrome.google.com/webstore/detail/aohghmighlieiainnegkcijnfilokake</a></span></strong><br>]]>
+    
+    </summary>
+    
+      <category term="chrome插件" scheme="http://www.tianrunlin.com/tags/chrome%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[4种言论自由]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/18/4-kinds-of-freedom-of-speech/"/>
+    <id>http://www.tianrunlin.com/2012/12/18/4-kinds-of-freedom-of-speech/</id>
+    <published>2012-12-18T14:00:00.000Z</published>
+    <updated>2015-06-13T04:29:00.023Z</updated>
+    <content type="html"><![CDATA[<p>言论自由包含两种自由：输出自由和输入自由。而参照柏林（Isaiah Berlin）的观点，自由又分积极自由和消极自由。于是两者相交叉，言论自由的内容便涵盖了四种自由，简称为说的自由，不说的自由；听的自由，不听的自由。<br>&nbsp; &nbsp; 而人们往往只注重第一种言论自由，也就是说的自由，却忽视了另外三种自由。<br><a id="more"></a></p>
+<p>&nbsp; &nbsp;先从说的自由说起。说的自由，也就是一般狭义上的言论自由。<br>&nbsp; &nbsp; 言论自由作为自由的一种，必然具有自由的一般规定性。那么，什么是自由呢？从法学的意义上看，自由是按照自己的意愿，在一定边界内为或者不为某种行为的的权利。关于自由的边界，已经有了不少著述，最具有代表性的就是穆勒(J.S.Mill)在《论自由》中提出的观点（这本书严复先生翻译的版本书名很好，《群己权界论》，一针见血。）：<br>&nbsp; &nbsp; 唯一实称其名的自由，乃是按照我们自己的道路去追求我们自己的好处的自由，只要我们不试图剥夺他人的这种自由，不试图阻碍他们取得这种自由的努力。</p>
+<p>这一边界，重点在该自由会不会对他人造成直接而实质性的损害。用到言论自由上，就是该言论不会直接对他人造成实质性的伤害。<br>所谓直接性就是:<br>如果我骂你，你气死了，或者严谨点说，你心脏病发作死了，那么这就是直接的伤害，我对这一言论的发表的自由不受保护；<br>而如果我说「这把刀真好用」，然后别人买了一把一样的刀去杀人，这就是间接的伤害，我对这一言论依然保有自由。<br>所谓实质性就是：<br>如果上面我骂的人没气死，只是不爽而已，那么就没有造成实质性的伤害。那么我还是可以骂你。<br>&nbsp; &nbsp; 或许看起来有点诡异，但实际上，对自由的限制一般是用在对责任的裁量中的，也就是说如果这一行为被认为是正当的自由，那么就不会因此而承担责任。实际上，一个人要做什么事不是规范可以约束的，从法律的眼光看，对自由的规范更重要的是在行为发生后对责任的裁量问题，也就是「说了这句话，你要负什么责任」的问题。<br>&nbsp; &nbsp;值得注意的是，很多人会混淆穆勒的功利主义和一般的功利主义。一般的功利主义者可能会认为，即使一个人的言论不会对他人的权利和自由造成实质性伤害，但只要它对于社会弊大于利，就应该被窒息。而穆勒的功利主义却会认为，对一个人言论自由限制造成的影响的观照，不仅仅应该局限于短期的社会影响，更应该看到它对长远的人类福祉的影响：<br>如果一个人利用自己的主观臆断判定他人的言论不当而窒息之，则社会便失去了聆听这一观点的机会，那么即使只有1%的机会这个言论是真理，人类也有可能因此而蒙受100%的损失；<br>如果一个人的正当言论自由被窒息，那么会有更多的人的正当言论自由被出于各种借口被窒息，由此所有社会人的言论自由也会危在旦夕。<br>&nbsp; &nbsp; 这一精神，用穆勒的原话来说就是：<br>&nbsp; &nbsp; 如果整个人类，除一人之外，意见都一致，而只有那一个人持相反意见，人类也没有理由不让那个人说话。正如那个人一旦大权在握，也没有理由不让人类说话一样。<br>&nbsp; &nbsp; 或者引用一句大家非常熟悉的伏尔泰的名言：<br>&nbsp; &nbsp; &nbsp;我可以不同意你的观点，但我誓死捍卫你说话的权利。<br>&nbsp; &nbsp; 所以，即使是对社会会产生更多消极影响的正当言论，也因其作为一种自由所具有的神圣性而应受到保护，得以表达。<br>&nbsp; &nbsp; 但是明显会造成实质性侵犯的言论就不一样了，比如霍姆斯(Oliver Wendell Holmes, Jr.)提出过的：<br>对自由言论最严格的保护也不会允许在剧院里谎称失火造成恐慌。<br>&nbsp; &nbsp; 这，就是说的自由的边界。<br>&nbsp; &nbsp; 再来看不说的自由。不说的自由也被视为沉默权，最明显的表现就是美国警察逮捕某人时所说的《米兰达宣言》中的第一句话：<br>你有权保持沉默。（You have the right to remain silent. ）<br>&nbsp; &nbsp; 又或者美国宪法第五修正案中的内容：<br>不得被强迫(人民)在任何刑事案件中自证其罪 (……nor shall be compelled in any criminal case to be a witness against himself)</p>
+<p>&nbsp; &nbsp;正是因为人有不说的自由，所以刑讯逼供是一种不正当的行为。正如贝卡利亚在《论犯罪与刑罚》中提到的：<br>……在痉挛和痛苦中讲真话并不那么自由，就像从前不依靠作弊而避免烈火与沸水的结局并不那么容易一样。我们意志的一切活动永远是同作为意志源泉的感受印象的强度对称的，而且每个人的感觉是有限的。因而，痛苦的影响可以增加到这种地步：它占据了人的整个感觉，给受折磨者留下的惟一自由只是选择眼前摆脱惩罚最短的捷径，这时候，犯人的这种回答是必然的，就像在火与水的考验中所出现的情况一样。有感性的无辜者以为认了罪就可以不受折磨，因而称自己为罪犯。<br>&nbsp; &nbsp; 但是不说的自由也有其边界。当然，这里的说只是一个形象的说法，实际上指的是表达，所以和你能不能说话没什么关系。不表达的自由，在一定情况下也会受到一定限制，比如一个著名的例子：<br>如果你所在的城市即将被炸药轰上天，而你们抓住了一个知道如何防止炸药被引爆的恐怖分子，你们要不要逼他说出拯救城市的办法？<br>&nbsp; &nbsp; 当然还有其他种种边界，比如，先前的约定，常见的就是法庭上证人的Sworn testimony:<br>I swear by Almighty God that I will tell the truth, the whole truth and nothing but the truth.<br>&nbsp; &nbsp; 因此在法庭上，不能有所保留，必须说出所有的真相(the whole truth)<br>&nbsp; &nbsp; 接下来是听的自由。这和说的自由是对应的，因为如果A的言论表达受阻，那么B对该言论的聆听权利也会受到侵犯。但因为听是一个被动的行为，而且产生影响的一方是自己，所以听的自由，边界并不明显，但受到侵犯的表现却很明显。如果从对方开始表达这一节点看起，对A说的自由的侵犯也是对B听的自由的侵犯，但是对A说的自由的边界限制并不会侵犯B听的自由，因为前者有前者的考量。对B听的自由的侵犯，往往是体现在对B输入言论的渠道的限制或阻塞上的。通俗一点解释，中国的GFW（墙）就是一种。<br>&nbsp; &nbsp;最后是经常被忽视的不听的自由。这一自由其实是很难得以保障的，以为一个人对言论的接受是一个被动的过程，如果你不知道A是你不想知道的东西，有时候你是不能在知道A之前知道这一点的。说起来有点绕，举个例子：<br>假设你得了癌症而不自知，而你的想法是「就算我得了癌症我也不想知道这一点」。有一天，你去体检，体检结果出来，一看，自己得了癌症。这时候，你知道了自己不想知道的东西。<br>&nbsp; &nbsp; 但是你能说医院侵犯了你不听的自由吗？不能。因为不听的自由有一条限制，就是你需要先声明你不想知道这一点，如果别人明知你不想知道还是告诉你，那么他就侵犯了你不听的权利。也因为这一事先声明往往不能预先做到，这一自由往往也不能保障。<br>&nbsp; &nbsp; 很容易想到，这一自由在集权主义国家容易遭受侵犯，比如各种各样的洗脑教育。但有的时候我们不听的自由被侵犯了我们也不会知道，而且它也不能真被称为「侵犯」，毕竟我们并没有事先声明我们不想知道，因为我们还蒙在鼓里，不知道自己真正想要的是什么。比如赫胥黎的《美丽新世界》中描述的给儿童催眠，让他们对自己的阶级产生认同感的场景：<br>　　主任沿着那一长排小床慢慢走去。八十个男女儿童舒坦地躺着，轻柔地呼吸着，面孔红红的，平静安详。每个枕头下都有轻柔的声音传来。主任停了脚步，在一张小床前弯下身子仔细倾听。<br>　　“你说的是《阶级意识发凡》吗？我们把声音放大点试试看。”<br>　　屋子尽头有一个扩音器伸出在墙上。主任走到它面前摁了摁按钮。<br>　　“……都穿绿色，”一个柔和清晰的声音从句子中途开始，“而德尔塔儿童则穿咔叽。爱扑塞隆穿得更差一些。爱扑塞隆们太笨，学不会读书写字；他们穿黑色，那是很粗陋的颜色。我非常高兴我是个比塔。”<br>　　停顿了片刻，那声音又开始了。<br>　　“阿尔法儿童穿灰色。他们的工作要比我们辛苦得多，因为他们聪明得吓人。我因为自己是比塔而非常高兴，因为我用不着做那么辛苦的工作。何况我们也比伽玛们和德尔塔们要好得多。伽玛们都很愚蠢，他们全都穿绿衣服，德尔塔们穿咋叽衣服。啊，不，我不愿意跟德尔塔孩子们玩。爱扑塞隆就更糟糕了，太笨，他们学不会…”<br>　　主任摁回了按钮，声音没有了。只有它的细弱的幽灵还在八十个枕头底下继续絮叨。<br>　　“它醒来之前这些话还要为他们重复四十到五十遍；星期四，星期六还要重复。三十个月，每周三次，每次一百二十遍。然后接受高一级的课程。”</p>
+<p>&nbsp; &nbsp;而我认为，对不听的自由的漠视，是一个社会真正的悲哀。<br>转自<a href="http://www.zhihu.com/question/19788336/answer/13032251" target="_blank" rel="external">www.zhihu.com/question/19788336/answer/13032251</a><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>言论自由包含两种自由：输出自由和输入自由。而参照柏林（Isaiah Berlin）的观点，自由又分积极自由和消极自由。于是两者相交叉，言论自由的内容便涵盖了四种自由，简称为说的自由，不说的自由；听的自由，不听的自由。<br>&nbsp; &nbsp; 而人们往往只注重第一种言论自由，也就是说的自由，却忽视了另外三种自由。<br>]]>
+    
+    </summary>
+    
+      <category term="知乎" scheme="http://www.tianrunlin.com/tags/%E7%9F%A5%E4%B9%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[通过博客搬家同步博客]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/17/sync-blog-through-blog-moving/"/>
+    <id>http://www.tianrunlin.com/2012/12/17/sync-blog-through-blog-moving/</id>
+    <published>2012-12-17T14:00:00.000Z</published>
+    <updated>2015-06-13T04:30:18.474Z</updated>
+    <content type="html"><![CDATA[<p>这篇是<a href="http://www.tianrunlin.com/2012/12/sync-blog-through-email-forwarding.html">通过邮件转发来同步博客</a>的后续文章。</p>
+<p>报告一下实验结果吧。</p>
+<p>点点太坑爹，邮件转发的文章超链接和图片都被除去了，起不到一点效果（tumblr不这样，学要学像一点嘛）。</p>
+<p>人人网可以通过导入rss来同步，但是有一些问题：<br>1、RSS同步不是即时的，人人往往至少要等第二天才能更新（这个并不是什么大的问题）。<br>2、并不能完全导入，比如我的博客www.tianrunlin.com和<a href="http://blog.tianrunlin.com/" target="_blank" rel="external">blog.tianrunlin.com</a>一共有55篇文章导入，成功的却只有9篇（如果一直这样，那就是个问题）。目前只发现人人这一个入口，接下来就是将人人人网博客导入到其他网站。<br><a id="more"></a></p>
+<p>下面是一些支持搬家的网站，以及它们支持导入网站</p>
+<p>网易博客支持的搬家博客<br>Live Spaces：<a href="http://*******.spaces.live.com" target="_blank" rel="external">http://*******.spaces.live.com</a><br>博客大巴：<a href="http://*******.blogbus.com" target="_blank" rel="external">http://*******.blogbus.com</a><br>QQ空间：<a href="http://*******.qzone.qq.com" target="_blank" rel="external">http://*******.qzone.qq.com</a><br>新浪博客：<a href="http://blog.sina.com.cn/*******" target="_blank" rel="external">http://blog.sina.com.cn/*******</a><br>百度空间：<a href="http://hi.baidu.com/*******" target="_blank" rel="external">http://hi.baidu.com/*******</a><br>搜狐博客：<a href="http://******.blog.sohu.com" target="_blank" rel="external">http://******.blog.sohu.com</a><br>和讯博客：<a href="http://******.blog.hexun.com" target="_blank" rel="external">http://******.blog.hexun.com</a><br>51.com：<a href="http://home.51.com/******" target="_blank" rel="external">http://home.51.com/******</a><br>中国博客网(blogcn)：<a href="http://*******.blogcn.com" target="_blank" rel="external">http://*******.blogcn.com</a><br>搜房网博客：<a href="http://blog.soufun.com/*******" target="_blank" rel="external">http://blog.soufun.com/*******</a><br>时光网博客 ：<a href="http://i.mtime.com/*******" target="_blank" rel="external">http://i.mtime.com/*******</a></p>
+<p>百度空间支持的搬家博客<br>支持的搬家的博客目前仅支持sina、msn</p>
+<p>新浪博客支持搬家的博客：搜狐博客，网易博客，QQ空间（Qzone）<br>搬家地址：<a href="http://control.blog.sina.com.cn/admin/blogmove/index.php" target="_blank" rel="external">http://control.blog.sina.com.cn/admin/blogmove/index.php</a><br>我死活找不到入口，好像关闭这个功能了？</p>
+<p>网易支持搬家的博客：WordPress，博客大巴（BlogBus），QQ空间（Qzone），新浪博客，百度空间，搜狐博客，和讯博客，51博客，博尚网（BlogCn），搜房网博客，时光网博客<br>搬家地址：<a href="http://blog.163.com/clone/clone.html" target="_blank" rel="external">http://blog.163.com/clone/clone.html</a></p>
+<p>搜狐博客<br>支持搬家的博客：新浪博客，百度空间、MSN空间<br>搬家地址：<a href="http://act.blog.sohu.com/transfer/apply.jsp" target="_blank" rel="external">http://act.blog.sohu.com/transfer/apply.jsp</a></p>
+<p>QQ空间<br>支持搬家的博客：人人网，开心网，网易博客<br>搬家地址：<a href="http://n.qzone.qq.com/new/index.html" target="_blank" rel="external">http://n.qzone.qq.com/new/index.html</a></p>
+<p>博客大巴<br>支持搬家的博客：新浪博客，搜狐博客，百度空间，天涯博客，博尚网（BlogCn），WordPress，Blogger<br>搬家地址：<a href="http://banjia.blogbus.com/" target="_blank" rel="external">http://banjia.blogbus.com/</a></p>
+<p>和讯博客<br>支持搬家的博客：新浪博客，搜狐博客，百度空间，博客网（Bokee），凤凰博报，天涯博客<br>搬家地址：<a href="http://hexuncom.blog.hexun.com/306956_d.html" target="_blank" rel="external">http://hexuncom.blog.hexun.com/306956_d.html</a></p>
+<p>目前的处境：<br>直接支持blogger搬家的博客大巴无法登录，重置密码无法收到密码，不知道什么原因。<br>支持从人人网日志导入的QQ空间死活不能导入我那9篇人人网日志。<br>QQ邮箱不支持自动转发邮件到QQ空间。<br>另外，博客搬家存在这个问题：只支持已发表文章的导入，如果搬家过后在原来的博客发表文章不能同步到搬家后的博客。</p>
+<p>目前看来这个问题只能暂时搁置到这里了。<br>如果发表到一篇博文后，把它分别复制粘贴到新浪、网易、百度空间，花费的时间不会超过3分钟，但这就不是我的本意了。<br>ps:我试着复制粘贴后发现：新浪博客是dofollow的外链，网易为nofollow，百度干脆隐藏了我那篇博客，仅对自己可见。</p>
+<p>以上仅结果供参考。</p>
+<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>这篇是<a href="http://www.tianrunlin.com/2012/12/sync-blog-through-email-forwarding.html">通过邮件转发来同步博客</a>的后续文章。</p>
+<p>报告一下实验结果吧。</p>
+<p>点点太坑爹，邮件转发的文章超链接和图片都被除去了，起不到一点效果（tumblr不这样，学要学像一点嘛）。</p>
+<p>人人网可以通过导入rss来同步，但是有一些问题：<br>1、RSS同步不是即时的，人人往往至少要等第二天才能更新（这个并不是什么大的问题）。<br>2、并不能完全导入，比如我的博客www.tianrunlin.com和<a href="http://blog.tianrunlin.com/">blog.tianrunlin.com</a>一共有55篇文章导入，成功的却只有9篇（如果一直这样，那就是个问题）。目前只发现人人这一个入口，接下来就是将人人人网博客导入到其他网站。<br>]]>
+    
+    </summary>
+    
+      <category term="blogger优化" scheme="http://www.tianrunlin.com/tags/blogger%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[通过邮件转发来同步博客]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/16/sync-blog-through-email-forwarding/"/>
+    <id>http://www.tianrunlin.com/2012/12/16/sync-blog-through-email-forwarding/</id>
+    <published>2012-12-15T17:08:00.000Z</published>
+    <updated>2015-06-13T04:30:18.475Z</updated>
+    <content type="html"><![CDATA[<p>做个实验</p>
+<p>因为搜索引擎对那些门户博客权重比较高，就拿我上篇博客<a href="http://www.tianrunlin.com/2012/12/finish-blogger-baidu-webmaster-verification.html">谷歌博客blogger如何完成百度站长工具验证</a>来说吧，那篇文章被人转发到网易博客，结果搜索文章标题的时候，那篇博客反而排在我的前面。略微不爽啊，不过如果能帮助别人也算好事一件吧。这可以算搜索引擎的一个不足吧，因为计算排名时它不仅要考虑文章是否原创，还要考虑博客权重因素。结果往往就造成了某篇原创博客被门户转载后排名反而落在门户后面。同时要我也发现，如果门户在转发的时候，保留原文的超链接（不是文字链接），可以在一定程度缓解这个问题。<br><a id="more"></a></p>
+<p>so,为了提高自己博客的权重，我决定在权重高的博客网站(不仅仅是门户博客)转发本博客的博文。我不想使用那些博客同步工具，因为我想让它们保留<a href="http://www.tianrunlin.com/2012/10/blogger-autoaddlink.html">blogger的文章末尾自动添加链接</a>，这个博客同步工具并不能做到。另外，如果同步更新的话，有可能出现其他博客的排名排在本博客前面，这恰恰是我想避免的。邮件转发有一个时间差，时间差不是很大，但应该可以确定哪一个是原创的吧。</p>
+<p>首先，要找到支持邮件发送博文功能的博客平台，这样的平台很多（wordpress就支持），我尝试网易博客和点点博客，其他博客名单不断增加中</p>
+<p>下面说一下步骤：</p>
+<p>我的blogger绑定了自己的QQ邮箱，我可以通过QQ邮箱发布博文。同时，每发布一篇博文，我会收到no-reply@blogger.com的一封博文邮件，如图示：</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://lh4.googleusercontent.com/-FnmXIt4G-Jw/UMyo0iLwHZI/AAAAAAAAANc/w0MOJC1-3zc/s1600/QQ%E6%88%AA%E5%9B%BE20121215223553.png" target="_blank" rel="external"><img src="https://lh4.googleusercontent.com/-FnmXIt4G-Jw/UMyo0iLwHZI/AAAAAAAAANc/w0MOJC1-3zc/s320/QQ%E6%88%AA%E5%9B%BE20121215223553.png" alt=""></a></div>
+
+<p>下面就把邮件转发到其他支持邮件发布博客的邮箱，首先在QQ邮箱设置转发规则：<br>依次打开：<strong>设置-&gt;收信规则-&gt;创建新规则</strong><br>我的规则是：<br>收件人包含<strong>no-reply@blogger.com</strong><br>收件主题包含<strong>[田润林的博客]</strong>（自己博客的标题）<br>邮件转发到自己163邮箱（不能直接发送到blogmail@188.com，因为网易博客要求邮件发布博客的邮箱必须为网易邮箱）</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://lh4.googleusercontent.com/-xQq1YfZYxMg/UMypxTUAypI/AAAAAAAAANk/HeQHzc-SzaA/s1600/QQ%E6%88%AA%E5%9B%BE20121215230558.png" target="_blank" rel="external"><img src="https://lh4.googleusercontent.com/-xQq1YfZYxMg/UMypxTUAypI/AAAAAAAAANk/HeQHzc-SzaA/s320/QQ%E6%88%AA%E5%9B%BE20121215230558.png" alt=""></a></div>
+
+<p>这样邮件就转发到自己的网易博客了，然后登录自己的网易邮箱，设置转发规则：<br>依次打开：<strong>设置-&gt;邮箱设置-&gt;自动转发</strong><br>规则：<br>转发到<strong>blogmail@188.com</strong>，但是”自动转发设置需经过验证方可生效，点击“确定”发送验证邮件，这个没办法实现博文发送，所以通过邮件转发到网易博客这个方法失败。</p>
+<p>点点轻博客邮件转发，比上面稍微简单点，将邮件转发到：<br><strong>**</strong>@p.diandian.com（地址可以登录自己的点点博客查看）<br>然后点点博客会将邮件以博文的形式发布出来，点击其中的链接就可以激活了,发布日志成功。</p>
+<p>其他可能存在的方法：博客搬家。<br>我会试试</p>
+<div><br></div><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>做个实验</p>
+<p>因为搜索引擎对那些门户博客权重比较高，就拿我上篇博客<a href="http://www.tianrunlin.com/2012/12/finish-blogger-baidu-webmaster-verification.html">谷歌博客blogger如何完成百度站长工具验证</a>来说吧，那篇文章被人转发到网易博客，结果搜索文章标题的时候，那篇博客反而排在我的前面。略微不爽啊，不过如果能帮助别人也算好事一件吧。这可以算搜索引擎的一个不足吧，因为计算排名时它不仅要考虑文章是否原创，还要考虑博客权重因素。结果往往就造成了某篇原创博客被门户转载后排名反而落在门户后面。同时要我也发现，如果门户在转发的时候，保留原文的超链接（不是文字链接），可以在一定程度缓解这个问题。<br>]]>
+    
+    </summary>
+    
+      <category term="blogger优化" scheme="http://www.tianrunlin.com/tags/blogger%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[谷歌博客blogger如何完成百度站长工具验证]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/09/finish-blogger-baidu-webmaster-verification/"/>
+    <id>http://www.tianrunlin.com/2012/12/09/finish-blogger-baidu-webmaster-verification/</id>
+    <published>2012-12-09T15:14:00.000Z</published>
+    <updated>2015-06-13T04:30:18.464Z</updated>
+    <content type="html"><![CDATA[<p>作为个中文博客，如果您想要自己的网站或博客呈现于中国，让您的网站得到百度的索引是很重要的一环（不管自己内心喜不喜欢它）。<br>您也可能要把您的网站搜索引擎优化，以便拥有较多百度索引量。<br>在<a href="http://www.tianrunlin.com/2012/10/baidu-backlink-tool.html">百度也推出外链工具了</a>这篇文章中，我说出自己遇到的问题：<br><a id="more"></a></p>
+<p>把&lt;meta name=”baidu-site-verification” content=”kwipAzfsQNeSEiQ1” /&gt;添加到blogger模版里，代码会变成&lt;meta content=’kwipAzfsQNeSEiQ1’ name=’baidu-site-verification’ &nbsp;/&gt;这两个含义是一样的，但是百度不认，所以不能让我让我的谷歌博客blogger完成百度站长工具验证，现在我终于找到这个问题的解决方法了。</p>
+<p>如果你还没有注册百度站长工具，请先完成下面的注册过程，如果已经完成了注册，可以直接跳过下面的注册过程：</p>
+<p>1。注册一个百度账号<br>2。去到 百度站长（zhanzhang.baidu.com ）页面。<br>3。登录，然后点击此“立即使用”按钮。<br>4。点击此“添加网站”按钮。<br>5。此时来到了棘手的部分。<br>我被指示让百度验证我的网站：www.tianrunlin.com<br>有两个验证方式。<br>验证方式一不适用于我，因为我的网站是属于 Blogspot，而 BlogSpot 没有上传文件的功能。<br>因此，我选择验证方式二，它提供了一个验证代码。<br>如果直接贴在blogger模版里面就会遇到我前面提到的问题，怎么办呢？<br>解决方案就是把这段验证代码添加到自定义CSS里面，具体做法如下：<br>到blogger后台，打开Blogspot的模板选项 - 自定义 - 高级 - 添加CSS ，然后粘贴验证代码，再保存更改。<br>等过一会，代码生效后，这个时候再返回到百度验证页面，再次点击“完成验证”按钮。<br>这样如此便成功啦！<br>这个是百度站长验证成功后的图片</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://lh6.googleusercontent.com/-6Rp1Kf1y4WI/UMSprUAcSxI/AAAAAAAAANE/uFFersZXyfc/s1600/QQ%E6%88%AA%E5%9B%BE20121209225626.png" target="_blank" rel="external"><img src="https://lh6.googleusercontent.com/-6Rp1Kf1y4WI/UMSprUAcSxI/AAAAAAAAANE/uFFersZXyfc/s320/QQ%E6%88%AA%E5%9B%BE20121209225626.png" alt="" title="完成百度站长工具归属验证"></a></div>
+
+<p>另外我也发现了度娘的坑爹之处，我的索引量后台显示的收录数为41，但是搜索的时候数量为11，而显示的结果只有3个，这是要闹哪样啊！！！</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://lh6.googleusercontent.com/-bBNFaoM-1qk/UMSqF4LfTyI/AAAAAAAAANM/aOjbWGya3dQ/s1600/QQ%E6%88%AA%E5%9B%BE20121209225731.png" target="_blank" rel="external"><img src="https://lh6.googleusercontent.com/-bBNFaoM-1qk/UMSqF4LfTyI/AAAAAAAAANM/aOjbWGya3dQ/s320/QQ%E6%88%AA%E5%9B%BE20121209225731.png" alt="" title="田润林的博客百度索引量"></a></div>
+
+<p>嗯，好吧，希望早日走出考察期，坚持更新。<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>作为个中文博客，如果您想要自己的网站或博客呈现于中国，让您的网站得到百度的索引是很重要的一环（不管自己内心喜不喜欢它）。<br>您也可能要把您的网站搜索引擎优化，以便拥有较多百度索引量。<br>在<a href="http://www.tianrunlin.com/2012/10/baidu-backlink-tool.html">百度也推出外链工具了</a>这篇文章中，我说出自己遇到的问题：<br>]]>
+    
+    </summary>
+    
+      <category term="网站分析" scheme="http://www.tianrunlin.com/tags/%E7%BD%91%E7%AB%99%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[谷歌深度用户]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/09/a-faithful-user-of-google/"/>
+    <id>http://www.tianrunlin.com/2012/12/09/a-faithful-user-of-google/</id>
+    <published>2012-12-08T18:55:00.000Z</published>
+    <updated>2015-06-13T04:28:59.895Z</updated>
+    <content type="html"><![CDATA[<p>今天看到了自己正在使用的<a href="https://www.google.com/settings/products?ref=home" target="_blank" rel="external">谷歌产品</a>，我觉得自己应该算得上是一名谷歌的深度用户了。<br>下面是我正在使用的谷歌产品列表图</p>
+<p><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="https://lh4.googleusercontent.com/-zlXG7chqL6M/UMOOuZWIRGI/AAAAAAAAAM0/ZObmvOD02pw/s1600/googleproducts.png" target="_blank" rel="external"><img src="https://lh4.googleusercontent.com/-zlXG7chqL6M/UMOOuZWIRGI/AAAAAAAAAM0/ZObmvOD02pw/s320/googleproducts.png" alt="" title="正在使用的谷歌产品"></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><br></td></tr></tbody></table><br><a id="more"></a>（同时测试一下使用又拍网作为blogger图床效果）</p>
+<p>您使用的产品</p>
+<p>AdSense<br>谷歌广告帐号我还申请，不知道为什么会出现在我的产品里面</p>
+<p>AdWords<br>关键词分析要用到</p>
+<p>Analytics（分析）<br>网站访问数据统计分析</p>
+<p>Blogger<br>当前的博客就是它了</p>
+<p>Chrome 浏览器同步<br>书签和扩展的同步非常有用</p>
+<p>Chrome 网上应用店<br>安装chrome扩展</p>
+<p>Developer Consoles<br>用了google app engine就算开发者？</p>
+<p>FeedBurner<br>博客订阅，感觉不太好用</p>
+<p>Gmail<br>gmail,目前的主力邮箱</p>
+<p>Google Play<br>目前用的就是安卓手机，但是我把他卸载了，因为上面合适自己的应用太少，而且貌似因为被墙速度不咋的，目前我通过应用汇安装应用</p>
+<p>Google Talk<br>用的人太少了，安装了，后来给卸了</p>
+<p>Google URL Shortener<br>在<a href="http://www.tianrunlin.com/2012/10/googleplus-short-url.html">Google+的短域名服务</a>，这篇文章后开始使用</p>
+<p>Google 文档<br>这个偶尔用用</p>
+<p>Google 云打印<br>这么没用过</p>
+<p>Google+<br>嗯，这个正在用，现在上面的好友比较少，<a href="https://plus.google.com/u/0/102517458541432477010/" target="_blank" rel="external">我的G+</a></p>
+<p>iGoogle<br>曾经用过，快要关闭了</p>
+<p>orkut<br>谷歌另一个社交产品，不太成功</p>
+<p>Picasa 网络相册<br>作为我的blogger的图册来着，图片有时候被墙，有时候又能正常显示。</p>
+<p>YouTube<br>上这里可以看一些国内不让看的视频</p>
+<p>代码<br>与Developer Consoles相同</p>
+<p>地图<br>曾经的手机地图，但是现在已经转投百度地图了</p>
+<p>谷歌纵横<br>谷歌地图带的位置显示</p>
+<p>快讯<br>google.com alert，可以把谷歌收录的某个关键词最新的搜索结果的最以电子邮件形式发送到邮箱，用过一段时间。</p>
+<p>日历<br>待办事情提醒，可以在pc与手机之间同步</p>
+<p>图书搜索<br>这个谷歌不如百度和新浪爱问好用，嗯，因为版权。</p>
+<p>网络历史记录<br>这个和书签类似</p>
+<p>网站站长工具<br>站长工具，常用</p>
+<p>信息中心<br>就是显示自己正在使用的谷歌产品</p>
+<p>语音<br>手机上装了一个语音助手，挺好玩的。</p>
+<p>阅读器<br>google reader，订阅别人博客最新，目前大概订阅了500多个源。</p>
+<p>嗯，应该可以说自己是谷歌深度用户了</p>
+<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天看到了自己正在使用的<a href="https://www.google.com/settings/products?ref=home">谷歌产品</a>，我觉得自己应该算得上是一名谷歌的深度用户了。<br>下面是我正在使用的谷歌产品列表图</p>
+<p><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="https://lh4.googleusercontent.com/-zlXG7chqL6M/UMOOuZWIRGI/AAAAAAAAAM0/ZObmvOD02pw/s1600/googleproducts.png"><img src="https://lh4.googleusercontent.com/-zlXG7chqL6M/UMOOuZWIRGI/AAAAAAAAAM0/ZObmvOD02pw/s320/googleproducts.png" alt="" title="正在使用的谷歌产品"></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><br></td></tr></tbody></table><br>]]>
+    
+    </summary>
+    
+      <category term="google" scheme="http://www.tianrunlin.com/tags/google/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[完成了对博客的修改]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/09/finish-blog-modification/"/>
+    <id>http://www.tianrunlin.com/2012/12/09/finish-blog-modification/</id>
+    <published>2012-12-08T16:36:00.000Z</published>
+    <updated>2015-06-13T04:30:18.465Z</updated>
+    <content type="html"><![CDATA[<p>在<a href="http://www.tianrunlin.com/2012/12/prepare-to-change-blog.html">准备对博客做一些修改</a>一文中，我谈了自己对博客修改的一些设想，现在这些设想都完成了。</p>
+<p>标签个数大大减少，当前的标签如下：<br>博客相关 Xappengine 排名 blogger优化 代理 blogger挂件 google 图册 网站分析 安全 捣腾 搜索引擎 时事新闻 知乎<br><a id="more"></a></p>
+<p>当前robots.txt内容如下<br>User-agent: *<br>Allow: /search/label/<br>Disallow: /search?<br>Allow: /<br>Sitemap: <a href="http://www.tianrunlin.com/atom.xml?redirect=false&amp;start-index=1&amp;max-results=500">http://www.tianrunlin.com/atom.xml?redirect=false&amp;start-index=1&amp;max-results=500</a><br>Sitemap: <a href="http://www.tianrunlin.com/feeds/posts/default?orderby=UPDATED">http://www.tianrunlin.com/feeds/posts/default?orderby=UPDATED</a></p>
+<p>这么做的目的是允许蜘蛛爬行<a href="http://www.tianrunlin.com/search/label/博客相关">http://www.tianrunlin.com/search/label/博客相关</a> 这样的标签，但是继续禁止蜘蛛爬行<br><a href="http://www.tianrunlin.com/search?updated-max=2012-11-21T22:47:00%2B08:00&amp;max-results=5">http://www.tianrunlin.com/search?updated-max=2012-11-21T22:47:00%2B08:00&amp;max-results=5</a> 这样的分页。<br>博客默认的sitemap和生成的sitemap都添加。</p>
+<p>增加了本博客的第一个友情链接，希望能添加更多的友情链接，但控制总友情链接数量不超过20条。</p>
+<p>对我的blogger博客的修改目前就告一段落了。<br>对博客的修改可能会造成排名下降、收录减少。因此不建议对博客经常性、大范围的修改。<br>本次修改可能会产生波动，根据以往的经验，预计一周内就可恢复正常。</p>
+<div><br></div><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>在<a href="http://www.tianrunlin.com/2012/12/prepare-to-change-blog.html">准备对博客做一些修改</a>一文中，我谈了自己对博客修改的一些设想，现在这些设想都完成了。</p>
+<p>标签个数大大减少，当前的标签如下：<br>博客相关 Xappengine 排名 blogger优化 代理 blogger挂件 google 图册 网站分析 安全 捣腾 搜索引擎 时事新闻 知乎<br>]]>
+    
+    </summary>
+    
+      <category term="blogger优化" scheme="http://www.tianrunlin.com/tags/blogger%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[欢迎订阅我的博客]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/08/blog-subscription/"/>
+    <id>http://www.tianrunlin.com/2012/12/08/blog-subscription/</id>
+    <published>2012-12-08T15:57:00.000Z</published>
+    <updated>2015-06-13T04:30:18.459Z</updated>
+    <content type="html"><![CDATA[<p>blogger提供默认订阅地址<br>atom订阅<a href="http://www.tianrunlin.com/feeds/posts/default">http://www.tianrunlin.com/feeds/posts/default</a><br>rss订阅<a href="http://www.tianrunlin.com/feeds/posts/default?alt=rss">http://www.tianrunlin.com/feeds/posts/default?alt=rss</a><br><a id="more"></a><br>feedsky订阅<a href="http://feed.feedsky.com/tianrl" target="_blank" rel="external">http://feed.feedsky.com/tianrl</a><br>QQ邮箱订阅：<a href="http://list.qq.com/cgi-bin/qf_invite?id=342d1bd6a99bad849f6ba07d4f09c3e8b449c43003c42828" target="_blank" rel="external">QQ邮箱订阅地址</a><br>将原来的feedsky订阅链接形式改变为帖子形式，达到减少出站链接的目地。<br>feedsky不太稳定，建议通过atom订阅我博客，QQ邮箱订阅还在审核中，审核通过后会挂出链接。<br>同时将footer中的blogger由外链改为改为文字形式。<br>当前出站链接数为3,pr输出值为0.72，欢迎交换友链。<br>时间2012年12月8日<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>blogger提供默认订阅地址<br>atom订阅<a href="http://www.tianrunlin.com/feeds/posts/default">http://www.tianrunlin.com/feeds/posts/default</a><br>rss订阅<a href="http://www.tianrunlin.com/feeds/posts/default?alt=rss">http://www.tianrunlin.com/feeds/posts/default?alt=rss</a><br>]]>
+    
+    </summary>
+    
+      <category term="blogger优化" scheme="http://www.tianrunlin.com/tags/blogger%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[三种不同类型的代理]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/08/three-kinds-of-proxy/"/>
+    <id>http://www.tianrunlin.com/2012/12/08/three-kinds-of-proxy/</id>
+    <published>2012-12-08T14:28:00.000Z</published>
+    <updated>2015-06-13T04:30:18.476Z</updated>
+    <content type="html"><![CDATA[<p>按照不同的分类标准，代理可以划分不同的类型。如果按照匿名程度来划分的话，代理可以分为透明代理、普通匿名代理、超级匿名代理这三种类型，下面是对它们的详细讲解。</p>
+<p>一、没有使用代理服务器的情况：<br>REMOTE_ADDR = 您的 IP<br>HTTP_VIA = 没数值或不显示<br>HTTP_X_FORWARDED_FOR = 没数值或不显示<br><a id="more"></a></p>
+<p>二、使用透明代理服务器的情况：Transparent Proxies</p>
+<p>REMOTE_ADDR = 代理服务器 IP<br>HTTP_VIA = 代理服务器 IP<br>(补充：这个字段由代理服务器填充，有时会填充网关信息等)<br>HTTP_X_FORWARDED_FOR = 您的真实 IP<br>这类代理服务器还是将您的信息转发给您的访问对象，无法达到隐藏真实身份的目的。</p>
+<p>三、使用普通匿名代理服务器的情况：Anonymous Proxies<br>REMOTE_ADDR = 代理服务器 IP<br>HTTP_VIA = 代理服务器 IP<br>(补充：这个字段由代理服务器填充，有时会填充网关信息等)<br>HTTP_X_FORWARDED_FOR = 代理服务器 IP<br>隐藏了您的真实IP，但是向访问对象透露了您是使用代理服务器访问他们的。</p>
+<p>四、使用欺骗性代理服务器的情况：Distorting Proxies<br>REMOTE_ADDR = 代理服务器 IP<br>HTTP_VIA = 代理服务器 IP<br>(补充：这个字段由代理服务器填充，有时会填充网关信息等)<br>HTTP_X_FORWARDED_FOR = 随机的 IP<br>告诉了访问对象您使用了代理服务器，但编造了一个虚假的随机IP代替您的真实IP欺骗它。</p>
+<p>五、使用高匿名代理服务器的情况：High Anonymity Proxies(Elite proxies)<br>REMOTE_ADDR = 代理服务器 IP<br>HTTP_VIA = 没数值或不显示<br>HTTP_X_FORWARDED_FOR = 没数值或不显示<br>完全用代理服务器的信息替代了您的所有信息，就象您就是完全使用那台代理服务器直接访问对象。<br>除此之外，可以通过proxy judges总结其他一些可供参考的判定信息，一遍于在实践中加以利用。</p>
+<p>REMOTE_ADDR、HTTP_VIA、HTTP_X_FORWARDED_FOR含义</p>
+<p>REMOTE_ADDR 是你的客户端跟你的服务器“握手”时候的IP。如果使用了“匿名代理”，REMOTE_ADDR将显示代理服务器的IP。<br>HTTP_CLIENT_IP 是代理服务器发送的HTTP头。如果是“超级匿名代理”，则返回none值。同样，REMOTE_ADDR也会被替换为这个代理服务器的IP。<br>X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP，只有在通过了HTTP 代理(比如APACHE代理)或者负载均衡服务器时才会添加该项。</p>
+<div><br></div><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>按照不同的分类标准，代理可以划分不同的类型。如果按照匿名程度来划分的话，代理可以分为透明代理、普通匿名代理、超级匿名代理这三种类型，下面是对它们的详细讲解。</p>
+<p>一、没有使用代理服务器的情况：<br>REMOTE_ADDR = 您的 IP<br>HTTP_VIA = 没数值或不显示<br>HTTP_X_FORWARDED_FOR = 没数值或不显示<br>]]>
+    
+    </summary>
+    
+      <category term="代理" scheme="http://www.tianrunlin.com/tags/%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[谷歌不再向小企业免费提供Google Apps]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/07/Google-no-longer-provide-free-Google-Apps-to-small-businesses/"/>
+    <id>http://www.tianrunlin.com/2012/12/07/Google-no-longer-provide-free-Google-Apps-to-small-businesses/</id>
+    <published>2012-12-07T14:27:26.000Z</published>
+    <updated>2015-06-12T13:20:22.992Z</updated>
+    <content type="html"><![CDATA[<p>谷歌今天表示，将不再向小型企业免费提供Google Apps办公软件。10人或10人以下的企业或机构若需使用，每人每年需支付50美元。</p>
+<p>　　Google Apps服务项目包括电子邮件，文字、图表处理和演示工具，此前只对10人以上的企业收费。这次调整后，10人或10人以下的小企业也要付费才能使用，收费标准和大企业一致。</p>
+<p>　　谷歌表示，个人用户仍然能够免费使用Google Apps的大多数产品，譬如Gmail电子邮件服务。现在已在使用免费版Google Apps的企业用户也可以继续使用，但不能享受高级版的新增功能。这意味着，现存的免费企业用户在升级新版本Google Apps需要开始付费。</p>
+<p>　　谷歌今天早些时候宣布，全球已有超过500万家企业或机构在使用Google Apps。谷歌对Google Apps采取了逐步扩充收费范围的策略，在2011年底之前，50人或50人以下的企业享有免费使用权。</p>
+<p>　　广告一直是谷歌的核心业务，但该公司从来没有放弃拓展企业市场，并希望企业业务能够成为该公司的重要收入来源之一。今年6月，谷歌高级副总裁兼首席商务官尼科什·阿罗拉(Nikesh Arora)曾表示，企业业务是谷歌未来的“增长引擎”<br>看来谷歌财务压力大了啊</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>谷歌今天表示，将不再向小型企业免费提供Google Apps办公软件。10人或10人以下的企业或机构若需使用，每人每年需支付50美元。</p>
+<p>　　Google Apps服务项目包括电子邮件，文字、图表处理和演示工具，此前只对10人以上的企业收费。这次调整后，10人或]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[莫言谈审查制度]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/07/moyan-talk-about-censorship/"/>
+    <id>http://www.tianrunlin.com/2012/12/07/moyan-talk-about-censorship/</id>
+    <published>2012-12-07T07:35:00.000Z</published>
+    <updated>2015-06-13T04:30:18.467Z</updated>
+    <content type="html"><![CDATA[<p>莫言表示：“获奖是我个人的事。诺贝尔奖从来都是颁给一个作家的，不是颁给国家的。”他也说道，希望自己获奖”会引起中国读者对文学的兴趣”，希望“能对中国文学的发展起到积极的推动作用”。<br>然而在10月12日回答路透社记者提出有关LiuXB的问题时，莫言出乎意料地说：“我希望他（LiuXB）能尽快获得自由”。<br><a id="more"></a></p>
+<p>在回答瑞典媒体提问如何看待新闻审查时，莫言答：“我反感所有的检查，比如说我去大使馆办签证，他们也要检查。我坐飞机出海关，他们也要检查。甚至解下腰带脱了鞋检查。”但是他说，认为这种检查是必要的。“我从来没有赞美过新闻审查这种制度，但我想新闻审查每个国家都存在。但是审查的尺度和标准都一样。如果没有新闻审查，大家都可以在任意污蔑和诽谤人家。” 他接着说：“但是我想新闻审查应该遵守的最高准则是，只要不违背实事真相的都不应该审查，违背了实事真相的都要审查。”</p>
+<p>瑞典记者继续提问莫言，问他是否认为“言论审查制度有利于创作”。莫言否认自己说过这样的话，他说：“我要讲一句真心话，如果一个作家认为他在完全自由的状态下能够写出最伟大的作品，我认为这是一种幻想。反过来说，如果一个作家在不自由或者不太自由的情况写不出好作品，也是假话。关键是作家自己的内心是否自由，关键是作家能否站在超越了政治和阶级的立场来写作，包括作家的爱心，包括那些在背后咬牙切齿憎恨你的人，也要把他们当人看，给予他们深深的同情。”</p>
+<p>莫言将在瑞典学院进行的演讲是广受瞩目的焦点，在新闻发布会上他表示，两天就准备好了演讲稿，并没有太大压力。“如果把世界上所有的问题都在短短演讲稿里讲一遍是不可能的，所以我就讲我自己，讲真话。”演讲将于12月7日下午5点30分（北京时间12月8日0点30分）开始。根据诺贝尔基金会提供的信息，莫言今年演讲的题目是“讲故事的人”(Storytellers)。</p>
+<p>在新闻发布会上，当记者问及“讲故事”，莫言答道：“讲故事是人类的天性。但是讲故事变成一种职业以后，目的就不仅仅是愉悦他人。他用自己的故事来表达对人生社会的种种看法。他也要用他的故事来歌颂真善美，揭露和鞭挞假恶丑。”</p>
+<p>上述内容被竟然某些媒体解读为“莫言为中国审查制度辩护”，我就纳闷了，这也算支持吗？<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>莫言表示：“获奖是我个人的事。诺贝尔奖从来都是颁给一个作家的，不是颁给国家的。”他也说道，希望自己获奖”会引起中国读者对文学的兴趣”，希望“能对中国文学的发展起到积极的推动作用”。<br>然而在10月12日回答路透社记者提出有关LiuXB的问题时，莫言出乎意料地说：“我希望他（LiuXB）能尽快获得自由”。<br>]]>
+    
+    </summary>
+    
+      <category term="时事新闻" scheme="http://www.tianrunlin.com/tags/%E6%97%B6%E4%BA%8B%E6%96%B0%E9%97%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[doodle博客日志初步分析]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/05/doodle-blog-logs-primary-analysis/"/>
+    <id>http://www.tianrunlin.com/2012/12/05/doodle-blog-logs-primary-analysis/</id>
+    <published>2012-12-05T14:57:35.000Z</published>
+    <updated>2015-06-12T15:25:36.979Z</updated>
+    <content type="html"><![CDATA[<p>这是<a href="http://doodle.tianrunlin.com/2012/12/04/change-sina-weibo-tail" target="_blank" rel="external">doodle博客日志下载成功</a>的续篇，日志下载到本地后，就该对日志进行分析了，首先分析的就应该是搜索引擎的蜘蛛（爬虫、机器人）了。<br>假定所有的蜘蛛都遵守robots.txt协议，所以他们会先读取robots.txt，会出现下面类似下面的日志记录<br>211.39.150.195 - - [03/Oct/2012:23:23:30 -0700] “GET /robots.txt HTTP/1.1” 200 290 - “Mozilla/5.0 (compatible; Googlebot/2.1; +<a href="http://www.google.com/bot.html" target="_blank" rel="external">http://www.google.com/bot.html</a>)”<br>这是我用某软件的概要分析结果（不太准确）<br>         蜘蛛名 &#160;&#160;&#160;&#160; 访问次数 &#160;&#160;&#160;&#160; 总停留时间(小时) &#160;&#160;&#160;&#160; 总抓取量 &#160;&#160;&#160;&#160; 占比 %<br> 1 &#160;&#160;&#160;&#160; 谷歌蜘蛛 &#160;&#160;&#160;&#160; 71 &#160;&#160;&#160;&#160; 5.657 &#160;&#160;&#160;&#160; 391 &#160;&#160;&#160;&#160; 59.695<br> 2 &#160;&#160;&#160;&#160; BaiDu Spider &#160;&#160;&#160;&#160; 23 &#160;&#160;&#160;&#160; 8.108 &#160;&#160;&#160;&#160; 174 &#160;&#160;&#160;&#160; 26.565<br> 3 &#160;&#160;&#160;&#160; Sogou Spider &#160;&#160;&#160;&#160; 27 &#160;&#160;&#160;&#160; 1.944 &#160;&#160;&#160;&#160; 48 &#160;&#160;&#160;&#160; 7.328<br> 4 &#160;&#160;&#160;&#160; Alexa crawler &#160;&#160;&#160;&#160; 4 &#160;&#160;&#160;&#160; 0.023 &#160;&#160;&#160;&#160; 13 &#160;&#160;&#160;&#160; 1.985<br> 5 &#160;&#160;&#160;&#160; msnbot/ &#160;&#160;&#160;&#160; 3 &#160;&#160;&#160;&#160; 0.000 &#160;&#160;&#160;&#160; 11 &#160;&#160;&#160;&#160; 1.679<br> 6 &#160;&#160;&#160;&#160; W3C HTML-Code Validator &#160;&#160;&#160;&#160; 3 &#160;&#160;&#160;&#160; 0.033 &#160;&#160;&#160;&#160; 8 &#160;&#160;&#160;&#160; 1.221<br> 7 &#160;&#160;&#160;&#160; 雅虎蜘蛛 &#160;&#160;&#160;&#160; 1 &#160;&#160;&#160;&#160; 0.001 &#160;&#160;&#160;&#160; 5 &#160;&#160;&#160;&#160; 0.763<br> 8 &#160;&#160;&#160;&#160; Google Feedfetcher &#160;&#160;&#160;&#160; 1 &#160;&#160;&#160;&#160; 0.000 &#160;&#160;&#160;&#160; 3 &#160;&#160;&#160;&#160; 0.458<br> 9 &#160;&#160;&#160;&#160; Googlebot-Image &#160;&#160;&#160;&#160; 1 &#160;&#160;&#160;&#160; 0.171 &#160;&#160;&#160;&#160; 2 &#160;&#160;&#160;&#160; 0.305<br>  &#160;&#160;&#160;&#160; 总计 &#160;&#160;&#160;&#160; 134 &#160;&#160;&#160;&#160; 15.936 &#160;&#160;&#160;&#160; 655 &#160;&#160;&#160;&#160; 100.000 </p>
+<p>所以，我又用使用robots.txt进行匹配搜索，剔除明显的人为访问行为后，有下面这些useragent访问记录</p>
+<p> Mozilla/5.0 (compatible; Googlebot/2.1; +<a href="http://www.google.com/bot.html" target="_blank" rel="external">http://www.google.com/bot.html</a>)<br> 谷歌蜘蛛</p>
+<p> Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)<br> 未知，ip为美国费城的</p>
+<p> Sogou web spider/4.0<br> 搜狗蜘蛛<br> Mozilla/5.0 (compatible; YandexBot/3.0; +<a href="http://yandex.com/bots" target="_blank" rel="external">http://yandex.com/bots</a>)<br> yandex蜘蛛</p>
+<p> Sogou web spider/4.0\xac*<br> 搜狗蜘蛛，不知道这个和上面的有什么不同</p>
+<p> ia_archiver (+<a href="http://www.alexa.com/site/help/webmasters" target="_blank" rel="external">http://www.alexa.com/site/help/webmasters</a>; crawler@alexa.com)<br> alexa蜘蛛</p>
+<p> msnbot/2.0b (+<a href="http://search.msn.com/msnbot.htm" target="_blank" rel="external">http://search.msn.com/msnbot.htm</a>)<br> msn蜘蛛<br> Sogou web spider/4.0\xab*<br> Mozilla/5.0 (compatible; AhrefsBot/4.0; +<a href="http://ahrefs.com/robot/" target="_blank" rel="external">http://ahrefs.com/robot/</a>)<br> ahrefs蜘蛛</p>
+<p>SurcentroBot<br>不知道是谁家的<br> Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)<br> ezooms蜘蛛<br>Twitterbot/1.0<br>推特蜘蛛<br> Mozilla/5.0 (compatible; Butterfly/1.0; +<a href="http://labs.topsy.com/butterfly/" target="_blank" rel="external">http://labs.topsy.com/butterfly/</a>) Gecko/2009032608 Firefox/3.0.8<br> topsy.com公司的蜘蛛，这是他们的介绍：<br> Searches content published on Twitter and the web, sorted by relevance or date.<br> 是一家搜索推特及相关内容的公司</p>
+<p> Mozilla/5.0 (compatible; bingbot/2.0; +<a href="http://www.bing.com/bingbot.htm" target="_blank" rel="external">http://www.bing.com/bingbot.htm</a>)<br> bing蜘蛛<br> Mozilla/5.0 (compatible; Yahoo! Slurp; <a href="http://help.yahoo.com/help/us/ysearch/slurp" target="_blank" rel="external">http://help.yahoo.com/help/us/ysearch/slurp</a>)<br> 雅虎蜘蛛<br> PagesInventory (robot <a href="http://www.pagesinvenotry.com" target="_blank" rel="external">http://www.pagesinvenotry.com</a>)<br> pagesinvenotry蜘蛛</p>
+<p> Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; <a href="http://www.trendiction.de/bot" target="_blank" rel="external">http://www.trendiction.de/bot</a>; please let us know of any problems; web at trendiction.com) Gecko/20071127 Firefox/3.0.0.11<br>trendiction.com蜘蛛，这是他们的介绍<br> Online Media and Social Media data crawling for simple integration into media monitoring systems or market research studies.<br> 也是收集社会媒体数据的<br> Mozilla/5.0 (compatible; woriobot +<a href="http://worio.com" target="_blank" rel="external">http://worio.com</a>)<br> 这个也不知道<br> Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (FlipboardProxy/1.1; +<a href="http://flipboard.com/browserproxy" target="_blank" rel="external">http://flipboard.com/browserproxy</a>)<br> flipboard.com蜘蛛，这是他们介绍Your Social Magazine. Available for iPad, iPhone &amp; Android<br> 是为移动设备提供聚合信息的</p>
+<p> Mozilla/4.0<br> 未知</p>
+<p> Mozilla/5.0 ()<br> 未知</p>
+<p> Mozilla/5.0 (compatible; MJ12bot/v1.4.3; <a href="http://www.majestic12.co.uk/bot.php?+" target="_blank" rel="external">http://www.majestic12.co.uk/bot.php?+</a>)<br> majestic12.co.uk蜘蛛，这是他们介绍<br> Distributed Computing Project aimed towards building the largest search engine index on the Internet using Distributed Crawlers.<br> 分布式搜索引擎？</p>
+<p>当然，我们还不能忘记那些流氓蜘蛛，比如说soso蜘蛛，这货从来不鸟robots.txt，所以再以bot,spider，crawl为关键词进行搜索，有下面这些流氓<br>Baiduspider-image+(+<a href="http://www.baidu.com/search/spider.htm" target="_blank" rel="external">http://www.baidu.com/search/spider.htm</a>)<br>MetaURI API/2.0 +metauri.com<br>UnwindFetchor/1.0 (+<a href="http://www.gnip.com/" target="_blank" rel="external">http://www.gnip.com/</a>)<br>NING/1.0<br>JS-Kit URL Resolver, <a href="http://js-kit.com/" target="_blank" rel="external">http://js-kit.com/</a><br>LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta Commons-HttpClient/3.1 +<a href="http://www.linkedin.com" target="_blank" rel="external">http://www.linkedin.com</a>)<br>Mozilla/5.0 (compatible; redditbot/1.0; +<a href="http://www.reddit.com/feedback" target="_blank" rel="external">http://www.reddit.com/feedback</a>)<br>AddThis.com robot tech.support@clearspring.com<br>R6_CommentReader(www.radian6.com/crawler)<br>Mozilla/5.0 (compatible; JikeSpider; +<a href="http://shoulu.jike.com/spider.html" target="_blank" rel="external">http://shoulu.jike.com/spider.html</a>)<br>Mozilla/5.0(compatible; Sosospider/2.0; +<a href="http://help.soso.com/webspider.htm" target="_blank" rel="external">http://help.soso.com/webspider.htm</a>)<br>Mozilla/5.0 (compatible; Baiduspider/2.0; +<a href="http://www.baidu.com/search/spider.html" target="_blank" rel="external">http://www.baidu.com/search/spider.html</a>)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这是<a href="http://doodle.tianrunlin.com/2012/12/04/change-sina-weibo-tail" target="_blank" rel="external">doodle博客日志下载成功</a>的续篇，日志下载到本地后，]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[doodle博客日志下载成功]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/05/succeed-downloading-blog-logs/"/>
+    <id>http://www.tianrunlin.com/2012/12/05/succeed-downloading-blog-logs/</id>
+    <published>2012-12-05T13:34:24.000Z</published>
+    <updated>2015-06-13T04:32:05.231Z</updated>
+    <content type="html"><![CDATA[<p>按照<a href="http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。" target="_blank" rel="external">http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。</a><br>keakon把上传、下载、管理python应用的官方指南链接给我（Uploading, Downloading, and Managing a Python App，<a href="https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）" target="_blank" rel="external">https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）</a><br>关于下载日志官方文档是这么写的<br><a id="more"></a></p>
+<p>appcfg.py request_logs myapp/ mylogs.txt</p>
+<p><a href="http://doodle.tianrunlin.com/2012/12/02/how-to-Download-Export-google-App-Engine-gae-logs" target="_blank" rel="external">这个和如何导出（下载）GoogleAppEngine（gae）日志到本地</a>并没有什么不同吗，但是有这么一句：</p>
+<p>To upload application files, run the appcfg.py command with the update action and the name of your application’s root directory. The root directory should contain the app.yaml file for the application.</p>
+<p>也就说命令必须要包含app的路径。<br>我的Google App Engine路径是C:\Application Software\GoogleAppEngine-1.7.2，doodle程序路径是D:\Doodle_1.5_zh-CN<br>所以命令应该是，打开命令窗口，输入：</p>
+<p>cd C:\Application Software\GoogleAppEngine-1.7.2<br>appcfg.py —num_days=0 request_logs D:\Doodle_1.5_zh-CN/ mylogs.txt</p>
+<p>这样就把所有的日志保存到C:\Application Software\GoogleAppEngine-1.7.2\mylogs.txt文本中了。<br>我的<a href="http://doodle.tianrunlin.com/" target="_blank" rel="external">doodle博客</a>日志大小在10m左右，一共67580条记录，时间段是从03/Oct/2012:00:32:05到05/Dec/2012:05:01:54。<br>接下来，我准备对下载的日志进行分析了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>按照<a href="http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。">http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。</a><br>keakon把上传、下载、管理python应用的官方指南链接给我（Uploading, Downloading, and Managing a Python App，<a href="https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）">https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）</a><br>关于下载日志官方文档是这么写的<br>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[准备对博客做一些修改]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/05/prepare-to-change-blog/"/>
+    <id>http://www.tianrunlin.com/2012/12/05/prepare-to-change-blog/</id>
+    <published>2012-12-04T16:33:00.000Z</published>
+    <updated>2015-06-13T04:30:18.470Z</updated>
+    <content type="html"><![CDATA[<p>最近有点忙,导致好久没有写博客了。今天抽空写一篇吧，不然就这里荒芜了。<br>根据自己当前的一些想法，准备抽个时间对本博客进行一些修改，目前想到的有下面这几个方面：<br>1、改变robots.txt的内容：<br>将<br>Disallow: /search<br>改为<br>Allow: /search/label/<br>Disallow: /search?<br>这么修改的目的是允许蜘蛛抓取tag页面，不允许抓取分页。<br>个人认为tag还是允许抓取比较好。<br><a id="more"></a></p>
+<p>2、修改云标签的个数和内容，把标签的个数控制在10到15个之间，太多或太少的标签都不能起到导航的作用，同时每篇博客只贴一个标签。</p>
+<p>3、增加友情链接<br>本博客当前排名为：pr=2，alexa排名为1,174,222<br>但目前还没有人与我交换链接，可能是博客总篇数太少的缘故吧，只能坚持更新了。<br>我只能自己链接自己了，把自己的<a href="http://doodle.tianrunlin.com/" target="_blank" rel="external">doodle博客</a>和<a href="http://blog.tianrunlin.com/" target="_blank" rel="external">田润林的博客|bae</a>都添加友情链接里去，总之，权重不能浪费嘛。<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近有点忙,导致好久没有写博客了。今天抽空写一篇吧，不然就这里荒芜了。<br>根据自己当前的一些想法，准备抽个时间对本博客进行一些修改，目前想到的有下面这几个方面：<br>1、改变robots.txt的内容：<br>将<br>Disallow: /search<br>改为<br>Allow: /search/label/<br>Disallow: /search?<br>这么修改的目的是允许蜘蛛抓取tag页面，不允许抓取分页。<br>个人认为tag还是允许抓取比较好。<br>]]>
+    
+    </summary>
+    
+      <category term="blogger优化" scheme="http://www.tianrunlin.com/tags/blogger%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[新浪微博尾巴添加成功]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/04/change-sina-weibo-tail/"/>
+    <id>http://www.tianrunlin.com/2012/12/04/change-sina-weibo-tail/</id>
+    <published>2012-12-04T15:39:17.000Z</published>
+    <updated>2015-06-12T13:20:22.991Z</updated>
+    <content type="html"><![CDATA[<p>一波四折，新浪微博终于添加成功了，先秀一下图片<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/0%E5%BE%AE%E5%8D%9A%E5%B0%BE%E5%B7%B4.png" alt=""><br>简要的说一下方法吧。<br>首先打开新浪开发者平台，网址是<a href="http://open.weibo.com/。" target="_blank" rel="external">http://open.weibo.com/。</a><br>登录后点击网站接入，然后点开始接入，它会要求添加代码验证网站所有权和审核个人身份，<br>境内的网站需要备案，所以我放弃了我在bae上搭建的博客blog.tianrunlin.com，使用doodle.tianrunlin.com，证明境外网站我采用的是显示网址的ip信息，个人身份审核过程大概需要1到3天。<br>审核通过后就可以部署微连接了，我选择的是“发布到微博”。<br>接下来就是坑爹的申请提交过程了。<br>下面是我被驳回三次的邮件和最后通过的邮件。</p>
+<p>2012年11月26日 下午3:35<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”未能通过我方的来源文案审核，其原因是：“为保证您的网站组件上线正常运营，建议测试用户达到5人以上”。请您依据我们的建议和《微博开放平台审核指南》，再次修改后重新提交审核申请。查看常见驳回理由说明及解决方案 <a href="http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（忘了添加测试用户了，）" target="_blank" rel="external">http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（忘了添加测试用户了，）</a></p>
+<p>2012年11月27日 上午10:49<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”未能通过我方的来源文案审核，其原因是：“没有看到合作组件上线或组件功能未实现，请更换应用图标，要求为80<em>80的网站logo”。请您依据我们的建议和《微博开放平台审核指南》，再次修改后重新提交审核申请。查看常见驳回理由说明及解决方案 <a href="http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（好吧，我logo为78" target="_blank" rel="external">http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（好吧，我logo为78</a></em>80，组件还没添加呢，我以为是先通过再添加组件呢）</p>
+<p>2012年12月3日 下午3:18<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”未能通过我方的应用来源文案审核，其原因是：“请更换应用图标，要求为80<em>80的网站logo，没有看到合作组件上线或组件功能未实现”。请您依据我们的建议和《微博开放平台审核指南》进行修改，待提交审核冻结结束后重新提交审核申请。感谢您对新浪微博开放平台的支持！（我擦，我logo已经检查了，真是80</em>80啊，组件也加了，估计是太小或者加载没有完成他们没看到。然后，然后，我的申请竟然被冻结了，在12月4日前禁止提交，无语了，为此我还专门发了封邮件给他们）</p>
+<p>最后终于等到这封邮件了</p>
+<p>2012年12月4日 下午4:01<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”已经通过我方的来源文案审核，经由您的应用所发出的微博信息将会显示相应的来源文案，同时，您可以查看《微博开放平台审核指南》，对您的应用进行优化。感谢您对新浪微博开放平台的支持！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一波四折，新浪微博终于添加成功了，先秀一下图片<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/0%E5%BE%AE%E5%8D%9A%E5%B0%BE%E5%B7%B4.png" alt="]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[如何导出（下载）GoogleAppEngine（gae）日志到本地]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/02/how-to-Download-Export-google-App-Engine-gae-logs/"/>
+    <id>http://www.tianrunlin.com/2012/12/02/how-to-Download-Export-google-App-Engine-gae-logs/</id>
+    <published>2012-12-02T07:48:35.000Z</published>
+    <updated>2015-06-12T13:20:22.991Z</updated>
+    <content type="html"><![CDATA[<p>在gae后台查询日志比较麻烦，一来加载速度不是很快，二来每页最多显示50条结果，如果结果很多的，需要一直翻页下去。<br>所以，导出日志到本地是一个替代方案，但是在控制面板上并没有导出日志的选项。<br>怎么办呢？我们可以通过Google App Engine Launcher的appcfg.py从GAE导出日志到本地进行分析。</p>
+<p>运行如下的命令行<br>appcfg.py request_logs appname/ output.txt<br>记住用你自己gae应用的名字替换“appname”，<br>这个命令会从最后一天开始导出日志到output.txt</p>
+<p>当然你也可以添加时间选项<br>appcfg.py —num_days=5 request_logs appname/ output.txt<br>这个命令会导出最后五天的运行日志</p>
+<p>appcfg.py —num_days=0 request_logs appname/ output.txt<br>num_days=0代表导出所有的日志，所以这个命令会导出所有日志</p>
+<p>如果你想导出你还没有导出日志，可以使用下面的命令<br>appcfg.py —append request_logs appname/ output.txt<br>它会扫描你已经下载日志，并下载你还没有下载日志。</p>
+<p>—————-我是分割线————-选译自<a href="http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html-------" target="_blank" rel="external">http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html-------</a><br>按照他说的方法不能导出日志，求解决方案啊</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在gae后台查询日志比较麻烦，一来加载速度不是很快，二来每页最多显示50条结果，如果结果很多的，需要一直翻页下去。<br>所以，导出日志到本地是一个替代方案，但是在控制面板上并没有导出日志的选项。<br>怎么办呢？我们可以通过Google App Engine Launch]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[那些年爬过我页面的蜘蛛（爬虫、机器人）]]></title>
+    <link href="http://www.tianrunlin.com/2012/12/02/spider-crawler-bot-visit-my-blog/"/>
+    <id>http://www.tianrunlin.com/2012/12/02/spider-crawler-bot-visit-my-blog/</id>
+    <published>2012-12-02T06:55:34.000Z</published>
+    <updated>2015-06-13T04:32:14.735Z</updated>
+    <content type="html"><![CDATA[<p>在gae后台查看了一下日志（logs选项），发现下面的这些搜索引擎爬虫（蜘蛛）爬过我的页面（不完全统计），把它们名字和的打的旗号（使用的useragent）列出来：</p>
+<p>msnbot/2.0b (+<a href="http://search.msn.com/msnbot.htm" target="_blank" rel="external">http://search.msn.com/msnbot.htm</a>)<br>微软家的msn机器人</p>
+<p>ia_archiver (+<a href="http://www.alexa.com/site/help/webmasters" target="_blank" rel="external">http://www.alexa.com/site/help/webmasters</a>; crawler@alexa.com)<br>alexa家的爬虫</p>
+<p>Mozilla/5.0 (compatible; AhrefsBot/4.0; +<a href="http://ahrefs.com/robot/" target="_blank" rel="external">http://ahrefs.com/robot/</a>)<br>ahrefs的外链机器人<br><a id="more"></a></p>
+<p>Mozilla/5.0 (compatible; Baiduspider/2.0; +<a href="http://www.baidu.com/search/spider.html" target="_blank" rel="external">http://www.baidu.com/search/spider.html</a>)<br>百度蜘蛛，网页搜索蜘蛛</p>
+<p>Mozilla/5.0(compatible; Sosospider/2.0; +<a href="http://help.soso.com/webspider.htm" target="_blank" rel="external">http://help.soso.com/webspider.htm</a>)<br>搜搜网页蜘蛛</p>
+<p>Sogou web spider/4.0(+<a href="http://www.sogou.com/docs/help/webmasters.htm#07" target="_blank" rel="external">http://www.sogou.com/docs/help/webmasters.htm#07</a>)<br>搜狗网页蜘蛛</p>
+<p>Baiduspider-image+(+<a href="http://www.baidu.com/search/spider.htm" target="_blank" rel="external">http://www.baidu.com/search/spider.htm</a>)<br>百度蜘蛛，图片搜索蜘蛛</p>
+<p>Mozilla/5.0+(compatible;+googlebot/2.1;++<a href="http://www.google.com/bot.html" target="_blank" rel="external">http://www.google.com/bot.html</a>)<br>谷歌家的蜘蛛</p>
+<p>PagesInventory (robot <a href="http://www.pagesinventory.com" target="_blank" rel="external">http://www.pagesinventory.com</a>)<br>PagesInventory.com蜘蛛</p>
+<p>这是他们的介绍：PagesInventory.com is a free service that provides information about webhosting and domain names, reverse IP (+Ipv6) search and some other services.<br>提供主机和域名信息查询，ip反查域名等服务的一家公司。</p>
+<p>Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)<br>ezooms.com家的，名号很奇葩啊，貌似是提供ip反查地理地址服务的</p>
+<p>Mozilla/5.0 (compatible; bingbot/2.0; +<a href="http://www.bing.com/bingbot.htm" target="_blank" rel="external">http://www.bing.com/bingbot.htm</a>)<br>微软家的bing搜索机器人</p>
+<p>Mozilla/5.0 (compatible; YandexBot/3.0; +<a href="http://yandex.com/bots" target="_blank" rel="external">http://yandex.com/bots</a>)<br>yandex家的机器人，俄罗斯份额第一的搜索引擎</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在gae后台查看了一下日志（logs选项），发现下面的这些搜索引擎爬虫（蜘蛛）爬过我的页面（不完全统计），把它们名字和的打的旗号（使用的useragent）列出来：</p>
+<p>msnbot/2.0b (+<a href="http://search.msn.com/msnbot.htm">http://search.msn.com/msnbot.htm</a>)<br>微软家的msn机器人</p>
+<p>ia_archiver (+<a href="http://www.alexa.com/site/help/webmasters">http://www.alexa.com/site/help/webmasters</a>; crawler@alexa.com)<br>alexa家的爬虫</p>
+<p>Mozilla/5.0 (compatible; AhrefsBot/4.0; +<a href="http://ahrefs.com/robot/">http://ahrefs.com/robot/</a>)<br>ahrefs的外链机器人<br>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[给推特和新浪微博加个尾巴]]></title>
+    <link href="http://www.tianrunlin.com/2012/11/24/add-tail-for-sina-weibo-and-twitter/"/>
+    <id>http://www.tianrunlin.com/2012/11/24/add-tail-for-sina-weibo-and-twitter/</id>
+    <published>2012-11-24T14:13:30.000Z</published>
+    <updated>2015-06-12T13:20:22.992Z</updated>
+    <content type="html"><![CDATA[<p>推特的尾巴加起来很容易，doodle后台就有相关的模块。<br>成功后在doodle后台发送推文的效果图如下（貌似推特上看不了博客的发送来源，通过发微却能看到）：<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/twitter%20tail.png" alt=""><br>新浪微博网站接入还要进行审核ing，<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/weibo.png" alt=""><br>等待审核通过后新浪也可以加尾巴了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>推特的尾巴加起来很容易，doodle后台就有相关的模块。<br>成功后在doodle后台发送推文的效果图如下（貌似推特上看不了博客的发送来源，通过发微却能看到）：<br><img src="http://files.myopera.com/tianrunlin/albums]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
