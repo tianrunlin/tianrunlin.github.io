@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何在GAE下搭建B3log | 田润林的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、下载并安装java，成功标志：在CMD里面输入 java -version 显示java版本信息则成功，如下图&amp;nbsp;&amp;nbsp;附Java SE官方下载地址2、下载 Google App Engine SDK for Java，解压在根目录下,这里我选C盘，C:\appengine-java-sdk-1.7.2.13、下载B3log下载，解压到C盘根目录，C:\b3log-solo-ga">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在GAE下搭建B3log">
+<meta property="og:url" content="http://yoursite.com/2012/10/04/saeb3log/index.html">
+<meta property="og:site_name" content="田润林的博客">
+<meta property="og:description" content="1、下载并安装java，成功标志：在CMD里面输入 java -version 显示java版本信息则成功，如下图&amp;nbsp;&amp;nbsp;附Java SE官方下载地址2、下载 Google App Engine SDK for Java，解压在根目录下,这里我选C盘，C:\appengine-java-sdk-1.7.2.13、下载B3log下载，解压到C盘根目录，C:\b3log-solo-ga">
+<meta property="og:image" content="http://media-cache-ec3.pinterest.com/upload/496592296381338914_5sUiY3BH_c.jpg">
+<meta property="og:image" content="http://media-cache-lt0.pinterest.com/upload/496592296381338944_rwGu0rOO.jpg">
+<meta property="og:image" content="http://media-cache-ec2.pinterest.com/upload/496592296381338950_9MMcXdvt_c.jpg">
+<meta property="og:image" content="http://media-cache-ec2.pinterest.com/upload/496592296381338975_39mMfztt_c.jpg">
+<meta property="og:image" content="http://media-cache-ec5.pinterest.com/upload/496592296381338983_F9h6WdMw_c.jpg">
+<meta property="og:image" content="http://media-cache-ec3.pinterest.com/upload/496592296381338993_qeHR8bcT.jpg">
+<meta property="og:image" content="http://media-cache-ec4.pinterest.com/upload/496592296381339005_F6VvoSLz_c.jpg">
+<meta property="og:image" content="http://media-cache0.pinterest.com/upload/496592296381339010_8Z5l8d0w_c.jpg">
+<meta property="og:updated_time" content="2015-06-13T04:30:18.479Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何在GAE下搭建B3log">
+<meta name="twitter:description" content="1、下载并安装java，成功标志：在CMD里面输入 java -version 显示java版本信息则成功，如下图&amp;nbsp;&amp;nbsp;附Java SE官方下载地址2、下载 Google App Engine SDK for Java，解压在根目录下,这里我选C盘，C:\appengine-java-sdk-1.7.2.13、下载B3log下载，解压到C盘根目录，C:\b3log-solo-ga">
+  
+    <link rel="alternative" href="/atom.xml" title="田润林的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">田润林</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">运营推广、数据分析以及其他</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Xappengine/" style="font-size: 17.14px;">Xappengine</a> <a href="/tags/blogger优化/" style="font-size: 18.57px;">blogger优化</a> <a href="/tags/blogger挂件/" style="font-size: 12.86px;">blogger挂件</a> <a href="/tags/chrome插件/" style="font-size: 10px;">chrome插件</a> <a href="/tags/google/" style="font-size: 12.86px;">google</a> <a href="/tags/代理/" style="font-size: 14.29px;">代理</a> <a href="/tags/博客相关/" style="font-size: 20px;">博客相关</a> <a href="/tags/图册/" style="font-size: 11.43px;">图册</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/捣腾/" style="font-size: 10px;">捣腾</a> <a href="/tags/排名/" style="font-size: 15.71px;">排名</a> <a href="/tags/搜索引擎/" style="font-size: 10px;">搜索引擎</a> <a href="/tags/时事新闻/" style="font-size: 11.43px;">时事新闻</a> <a href="/tags/知乎/" style="font-size: 11.43px;">知乎</a> <a href="/tags/网站分析/" style="font-size: 12.86px;">网站分析</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">田润林</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">田润林</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">运营推广、数据分析以及其他</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-saeb3log" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/10/04/saeb3log/" class="article-date">
+  	<time datetime="2012-10-03T16:00:00.000Z" itemprop="datePublished">2012-10-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      如何在GAE下搭建B3log
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Xappengine/">Xappengine</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">1、</span><span style="background-color: white;">下载并安装java</span><span style="background-color: white;">，成功标志：在CMD里面输入 java -version 显示java版本信息则成功，如下图</span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://assets4.pinimg.com/upload/496592296381338914_5sUiY3BH.jpg" target="_blank" rel="external"><span style="color: black;"></span></a></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache-ec3.pinterest.com/upload/496592296381338914_5sUiY3BH_c.jpg" target="_blank" rel="external"><img src="http://media-cache-ec3.pinterest.com/upload/496592296381338914_5sUiY3BH_c.jpg" alt=""></a></div><span style="background-color: white;"><br></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">&nbsp;<span style="border: 0px; margin: 0px; padding: 0px; vertical-align: baseline;">&nbsp;</span><span style="border: 0px; margin: 0px; padding: 0px; vertical-align: baseline;">附</span></span><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk6u35-downloads-1836443.html" target="_blank" rel="external"><span style="font-family: arial, helvetica, sans-serif; font-size: medium;"><span style="background-color: white; line-height: 1em;">Java SE</span></span><span style="background-color: white; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1em;"><span style="line-height: 20px;">官方下载地址</span></span></a></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><br></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px;">2、下载 <a href="https://developers.google.com/appengine/downloads" target="_blank" rel="external">Google App Engine SDK for Java</a>，解压在根目录下,这里我选C盘，</span><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;">C:\appengine-java-sdk-1.7.2.1</span></span></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px;">3、下载<a href="http://code.google.com/p/b3log-solo/downloads/list" target="_blank" rel="external">B3log下载</a>，解压到C盘根目录，</span><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;">C:\b3log-solo-gae-0.5.0</span></span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache-lt0.pinterest.com/upload/496592296381338944_rwGu0rOO.jpg" target="_blank" rel="external"><span style="color: black;"><img src="http://media-cache-lt0.pinterest.com/upload/496592296381338944_rwGu0rOO.jpg" alt=""></span></a></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">&nbsp; &nbsp; &nbsp;</span></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px;">4、本地测试，打开CMD，输入</span><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;">cd C:\appengine-java-sdk-1.7.2.1\bin</span></span><span style="background-color: white; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px;">;如图</span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://assets3.pinimg.com/upload/496592296381338950_9MMcXdvt.jpg" target="_blank" rel="external"><span style="color: black;"></span></a></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache-ec2.pinterest.com/upload/496592296381338950_9MMcXdvt_c.jpg" target="_blank" rel="external"><img src="http://media-cache-ec2.pinterest.com/upload/496592296381338950_9MMcXdvt_c.jpg" alt=""></a></div><br></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;">&nbsp; 输入：dev_appserver.cmd&nbsp;C:\b3log-solo-gae-0.5.0；启动完成后，如图：</span></span></span><br><span style="background-color: white;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;"></span></span></span><br><a id="more"></a><span style="background-color: white;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;"><br></span></span></span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://assets7.pinimg.com/upload/496592296381338975_39mMfztt.jpg" target="_blank" rel="external"><span style="color: black;"></span></a></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache-ec2.pinterest.com/upload/496592296381338975_39mMfztt_c.jpg" target="_blank" rel="external"><img src="http://media-cache-ec2.pinterest.com/upload/496592296381338975_39mMfztt_c.jpg" alt=""></a></div><span style="background-color: white;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;"><br></span></span></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">&nbsp; 在浏览器中访问：<a href="http://localhost:8080，会出现启动画面，表示成功" target="_blank" rel="external">http://localhost:8080，会出现启动画面，表示成功</a></span><br><span style="background-color: white;"></span><br><span style="background-color: white;"><br></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"></span></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;">5、上传至GAE服务器，打开C:\b3log-solo-gae-0.5.0\WEB-INF\appengine-web.xml ，将&lt;application&gt;solo-demo&lt;/application&gt;更改为&lt;application&gt;你自己应用的名称&lt;/application&gt;,</span></span></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">配置WEB-INF/classes/latke.properties 这个文件的中的 Server 区域，配置成自己的访问地址。（如果要本地测试则改成localhost 端口改为8080）</span></div><span style="background-color: white;">serverScheme=http</span><span style="background-color: white;">serverHost=你自己的域名</span><span style="background-color: white;">serverPort=端口填 80</span><span style="background-color: white;">staticServerScheme=http</span><span style="background-color: white;">staticServerHost=你自己的域名</span><span style="background-color: white;">staticServerPort=端口填 80</span><br><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">如图：</span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://assets4.pinimg.com/upload/496592296381338983_F9h6WdMw.jpg" target="_blank" rel="external"><span style="color: black;"></span></a></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache-ec5.pinterest.com/upload/496592296381338983_F9h6WdMw_c.jpg" target="_blank" rel="external"><img src="http://media-cache-ec5.pinterest.com/upload/496592296381338983_F9h6WdMw_c.jpg" alt=""></a></div><span style="background-color: white;"><br></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;">然后在CMD里面输入appcfg.cmd update C:\b3log-solo-gae-0.5.0，输入你的GAE账号和密码（输密码的时候不会有显示），</span></span></span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://assets3.pinimg.com/upload/496592296381338993_qeHR8bcT.jpg" target="_blank" rel="external"><span style="color: black;"></span></a></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache-ec3.pinterest.com/upload/496592296381338993_qeHR8bcT.jpg" target="_blank" rel="external"><img src="http://media-cache-ec3.pinterest.com/upload/496592296381338993_qeHR8bcT.jpg" alt=""></a></div><span style="background-color: white;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif;"><span style="line-height: 20px;"><br></span></span></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"></span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">上传完成会出现下图，在浏览器中访问：<a href="http://your-ID.appspot.com/init.do" target="_blank" rel="external">http://your-ID.appspot.com/init.do</a> 进行初始化。</span></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;"></span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://assets5.pinimg.com/upload/496592296381339005_F6VvoSLz.jpg" target="_blank" rel="external"><span style="color: black;"></span></a></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache-ec4.pinterest.com/upload/496592296381339005_F6VvoSLz_c.jpg" target="_blank" rel="external"><img src="http://media-cache-ec4.pinterest.com/upload/496592296381339005_F6VvoSLz_c.jpg" alt=""></a></div><br></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">6、初始化B3log，如图</span></div><div class="separator" style="clear: both; text-align: center;"><a href="http://media-cache0.pinterest.com/upload/496592296381339010_8Z5l8d0w_c.jpg" target="_blank" rel="external"><img src="http://media-cache0.pinterest.com/upload/496592296381339010_8Z5l8d0w_c.jpg" alt=""></a></div><div class="separator" style="clear: both; text-align: center;"><a href="http://assets7.pinimg.com/upload/496592296381339010_8Z5l8d0w.jpg" target="_blank" rel="external"><span style="color: black;"></span></a></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><br></div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white;">&nbsp; 点击初始化，弹出对话框，确定后等3秒左右，自动跳转到管理后台，你就可以进入B3log的精彩之旅了……</span></div><div style="border: 0px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="background-color: white; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px;">至此，我的gae下的B3log:</span><a href="http://seuforest.appspot.com/" target="_blank" rel="external">http://seuforest.appspot.com/</a>搭建完成</div><div style="border: 0px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><span style="font-size: x-small;">转自<a href="http://www.ansen.me/articles/2011/05/01/1304270393591.html" target="_blank" rel="external">http://www.ansen.me/articles/2011/05/01/1304270393591.html</a>，有改动</span></div><div style="border: 0px; color: #555555; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; margin-bottom: 1em; padding: 0px; vertical-align: baseline;"><br></div><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/" target="_blank" rel="external">田润林的博客</a></div>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2012/10/04/gae_4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          GAE 博客程序推荐
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2012/10/03/blog-post_3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">微评国内云计算平台</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="saeb3log" data-title="如何在GAE下搭建B3log" data-url="http://yoursite.com/2012/10/04/saeb3log/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 田润林
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/mobile.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>

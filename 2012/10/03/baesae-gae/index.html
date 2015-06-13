@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>BAE、SAE 与 GAE 对比 | 田润林的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="从数据库、应用配置、计费、域名绑定、平台服务对比了 BAE、SAE 以及 GAE 的优劣，最后给出云平台选型的建议。数据库应用配置计费与配额域名绑定平台服务结论SAE 不支持 InnoDB（可申请支持），BAE 默认支持。BAE 不支持数据库连接池（c3p0、BoneCP 已测不支持），数据库连接不能长时间保持。GAE 使用 Datasotre 存取数据，最近也提供了云 SQL（MySQL），但申">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BAE、SAE 与 GAE 对比">
+<meta property="og:url" content="http://yoursite.com/2012/10/03/baesae-gae/index.html">
+<meta property="og:site_name" content="田润林的博客">
+<meta property="og:description" content="从数据库、应用配置、计费、域名绑定、平台服务对比了 BAE、SAE 以及 GAE 的优劣，最后给出云平台选型的建议。数据库应用配置计费与配额域名绑定平台服务结论SAE 不支持 InnoDB（可申请支持），BAE 默认支持。BAE 不支持数据库连接池（c3p0、BoneCP 已测不支持），数据库连接不能长时间保持。GAE 使用 Datasotre 存取数据，最近也提供了云 SQL（MySQL），但申">
+<meta property="og:updated_time" content="2015-06-13T04:28:59.918Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BAE、SAE 与 GAE 对比">
+<meta name="twitter:description" content="从数据库、应用配置、计费、域名绑定、平台服务对比了 BAE、SAE 以及 GAE 的优劣，最后给出云平台选型的建议。数据库应用配置计费与配额域名绑定平台服务结论SAE 不支持 InnoDB（可申请支持），BAE 默认支持。BAE 不支持数据库连接池（c3p0、BoneCP 已测不支持），数据库连接不能长时间保持。GAE 使用 Datasotre 存取数据，最近也提供了云 SQL（MySQL），但申">
+  
+    <link rel="alternative" href="/atom.xml" title="田润林的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">田润林</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">运营推广、数据分析以及其他</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Xappengine/" style="font-size: 17.14px;">Xappengine</a> <a href="/tags/blogger优化/" style="font-size: 18.57px;">blogger优化</a> <a href="/tags/blogger挂件/" style="font-size: 12.86px;">blogger挂件</a> <a href="/tags/chrome插件/" style="font-size: 10px;">chrome插件</a> <a href="/tags/google/" style="font-size: 12.86px;">google</a> <a href="/tags/代理/" style="font-size: 14.29px;">代理</a> <a href="/tags/博客相关/" style="font-size: 20px;">博客相关</a> <a href="/tags/图册/" style="font-size: 11.43px;">图册</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/捣腾/" style="font-size: 10px;">捣腾</a> <a href="/tags/排名/" style="font-size: 15.71px;">排名</a> <a href="/tags/搜索引擎/" style="font-size: 10px;">搜索引擎</a> <a href="/tags/时事新闻/" style="font-size: 11.43px;">时事新闻</a> <a href="/tags/知乎/" style="font-size: 11.43px;">知乎</a> <a href="/tags/网站分析/" style="font-size: 12.86px;">网站分析</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">田润林</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">田润林</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">运营推广、数据分析以及其他</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-baesae-gae" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/10/03/baesae-gae/" class="article-date">
+  	<time datetime="2012-10-03T06:13:00.000Z" itemprop="datePublished">2012-10-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      BAE、SAE 与 GAE 对比
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Xappengine/">Xappengine</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><span style="font-family: inherit;"><br></span></p>
+<div><div style="line-height: 20px;"><span style="font-family: inherit;">从数据库、应用配置、计费、域名绑定、平台服务对比了 BAE、SAE 以及 GAE 的优劣，最后给出云平台选型的建议。</span></div><span style="font-family: inherit;">数据库<br>应用配置<br>计费与配额<br>域名绑定<br>平台服务<br>结论</span><br><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 不支持 InnoDB（可申请支持），BAE 默认支持。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 不支持数据库连接池（c3p0、BoneCP 已测不支持），数据库连接不能长时间保持。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 使用 Datasotre 存取数据，最近也提供了云 SQL（MySQL），但申请比较困难，配额/性能笔者未测试过。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">另外，SAE 显式给出了主从库的访问方式，应用可以比较灵活地设计存取策略，例如读写分离。并且 SAE 是每个应用都拥有自己的数据库，而 BAE 是所有应用共用一个库。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 的 duapp-web.xml 基本是抄袭 GAE 的 appengine-web.xml，元素基本一致。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">比较奇葩的是 BAE 静态资源配置默认所有后缀为静态文件类型（例如 .html）的请求路径都默认假设为静态资源，需要在 duapp-web.xml 中指定排除。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 按应用天计费”豆豆”，服务也按流量计费、CPU 时间、调用次数计费。注册或活动送配额，否则需要购买。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 目前还没有详细的计费，只限定了应用数。公测结束后应该会细化计费模型。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 目前的计费模型主要是按 API 调用计数，流量分为 In/Out 配额。每天会定时刷新免费配额。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">综上，GAE 的计费一目了然，主要就是 API 调用次数；SAE 的计费比较复杂，不同服务有不同的计费策略；BAE 还没有明确的计费模型。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 开通企业套件后随便绑，企业套件有免费版。</span></div><div style="line-height: 20px;"><span style="font-family: inherit; text-decoration: line-through;">SAE 需要确认通过域名备案才能绑定，并且绑定后的流量计费翻倍。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 目前可以随便绑，但没备案的话绑定域名的请求走海外中转，流量计费翻倍（原二级域名请求计费不变）。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 目前可以随便绑，但没备案的后果自负。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 提供了 SDK 包，包含了开发需要的本地服务实现。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 则分别提供了服务 Jar，调用方式按不同服务而异。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 提供了完整的 SDK 包，包含了开发需要的本地运行环境和配置客户端。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">综上，GAE 提供了完整的平台化服务，覆盖了从开发到上线运维的一系列工具；SAE 则提供了部分工具，平台化不完整，增加了开发、运维难度；BAE 则是分别提供不同服务给开发，没有统一的 SDK 与调用方式。</span><br><span style="font-family: inherit;"></span><br><a id="more"></a><span style="font-family: inherit;"><br></span></div><div style="line-height: 20px;"><span style="font-family: inherit;">另外，值得一提的是 BAE 虽然服务没有整合到一个 SDK 中，但其分散的服务也比较适合应用自己选择。 其中云消息（消息服务）以及云触发（数据变更通知）是 GAE/SAE 没有提供的服务，某些业务场景应该会非常适用。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 与 BAE 主要还是面向应用部署托管，普通应用修改后易迁移部署到 BAE 或 SAE。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">新应用开发可以选择和平台绑死（依赖平台服务）或按照普通应用开发。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">使用配置工具来上传、更新应用配置其实是非常好的方式，但目前 SAE/J、BAE/J 都没有提供客户端配置工具，这增加了使用者的维护工作量。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 提供了比较完整的服务平台，覆盖了应用的生命周期，最近也提供了云 MySQL 服务以吸引更多开发者。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">需要根据应用类型来考虑平台选型，例如 GAE 基本以 API 计数的配额就不适合做社交应用，’墙’的问题也需要考虑解决方案。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">转自<a href="http://88250.b3log.org/bae-sae-gae" target="_blank" rel="external">http://88250.b3log.org/bae-sae-gae</a></span></div></div><span style="font-family: inherit;"></span><br><div><span style="font-family: inherit;"><br></span></div><span style="font-family: inherit;"></span><br><div><div style="color: #909090;"><span style="font-family: inherit;">—————————</span></div><div style="color: black;"><span style="font-family: inherit;">Posted via email</span></div></div><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/" target="_blank" rel="external">田润林的博客</a></div>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2012/10/03/blog-post_3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          微评国内云计算平台
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2012/10/01/blog-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">博客不翻墙也能正常显示了</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="baesae-gae" data-title="BAE、SAE 与 GAE 对比" data-url="http://yoursite.com/2012/10/03/baesae-gae/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 田润林
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/mobile.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>

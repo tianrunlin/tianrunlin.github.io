@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>网站访问统计分析基础 | 田润林的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="定义网站访问统计分析(web statistics and analytics)是指为了了解和优化网站访问情况而对访问数据进行测量，收集，分析和并形成报告的过程。这个过程往往没有告知用户并获得许可，在这种情况下，特别是通过第三方Cookie进行统计，并可以不同的网站之间共享，有侵犯用户隐私d的嫌疑。网站访问统计(web statistics)通常指的是网络数据的测量，收集。网站分析(web ana">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网站访问统计分析基础">
+<meta property="og:url" content="http://yoursite.com/2012/10/11/blog-post_11/index.html">
+<meta property="og:site_name" content="田润林的博客">
+<meta property="og:description" content="定义网站访问统计分析(web statistics and analytics)是指为了了解和优化网站访问情况而对访问数据进行测量，收集，分析和并形成报告的过程。这个过程往往没有告知用户并获得许可，在这种情况下，特别是通过第三方Cookie进行统计，并可以不同的网站之间共享，有侵犯用户隐私d的嫌疑。网站访问统计(web statistics)通常指的是网络数据的测量，收集。网站分析(web ana">
+<meta property="og:updated_time" content="2015-06-13T04:30:18.457Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网站访问统计分析基础">
+<meta name="twitter:description" content="定义网站访问统计分析(web statistics and analytics)是指为了了解和优化网站访问情况而对访问数据进行测量，收集，分析和并形成报告的过程。这个过程往往没有告知用户并获得许可，在这种情况下，特别是通过第三方Cookie进行统计，并可以不同的网站之间共享，有侵犯用户隐私d的嫌疑。网站访问统计(web statistics)通常指的是网络数据的测量，收集。网站分析(web ana">
+  
+    <link rel="alternative" href="/atom.xml" title="田润林的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">田润林</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">运营推广、数据分析以及其他</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Xappengine/" style="font-size: 17.14px;">Xappengine</a> <a href="/tags/blogger优化/" style="font-size: 18.57px;">blogger优化</a> <a href="/tags/blogger挂件/" style="font-size: 12.86px;">blogger挂件</a> <a href="/tags/chrome插件/" style="font-size: 10px;">chrome插件</a> <a href="/tags/google/" style="font-size: 12.86px;">google</a> <a href="/tags/代理/" style="font-size: 14.29px;">代理</a> <a href="/tags/博客相关/" style="font-size: 20px;">博客相关</a> <a href="/tags/图册/" style="font-size: 11.43px;">图册</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/捣腾/" style="font-size: 10px;">捣腾</a> <a href="/tags/排名/" style="font-size: 15.71px;">排名</a> <a href="/tags/搜索引擎/" style="font-size: 10px;">搜索引擎</a> <a href="/tags/时事新闻/" style="font-size: 11.43px;">时事新闻</a> <a href="/tags/知乎/" style="font-size: 11.43px;">知乎</a> <a href="/tags/网站分析/" style="font-size: 12.86px;">网站分析</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">田润林</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">田润林</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">运营推广、数据分析以及其他</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-blog-post_11" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/10/11/blog-post_11/" class="article-date">
+  	<time datetime="2012-10-11T14:00:00.000Z" itemprop="datePublished">2012-10-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      网站访问统计分析基础
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站分析/">网站分析</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="定义">定义</h3><p>网站访问统计分析(web statistics and analytics)是指为了了解和优化网站访问情况而对访问数据进行测量，收集，分析和并形成报告的过程。这个过程往往没有告知用户并获得许可，在这种情况下，特别是通过第三方Cookie进行统计，并可以不同的网站之间共享，有侵犯用户隐私d的嫌疑。<br>网站访问统计(web statistics)通常指的是网络数据的测量，收集。<br>网站分析(web analytics)通常指的是对网络数据的分析。<br>广义的网站分析包括网站访问统计。</p>
+<a id="more"></a>
+<h2 id="网站访问统计分析基本概念">网站访问统计分析基本概念</h2><p>PV(访问量)：即Page View, 即页面浏览量或点击量，用户每次刷新即被计算一次。<br>UV(独立访客)：即Unique Visitor,访问您网站的一台电脑客户端为一个访客。00:00-24:00内相同的客户端只被计算一次。<br>IP(独立IP)：指独立IP数。00:00-24:00内相同IP地址只被计算一次。<br>新访客：某客户端首次访问为一个新访客。<br>最近访客：最近一段时间内访问您网站的客户端。目前显示50条。<br>当前在线人数：15分钟内在线访问的UV数。<br>24小时独立IP：指每小时独立的IP地址。因为该数据每个小时是独立去重，所以叫24小时独立的IP。<br>&nbsp; &nbsp; &nbsp; &nbsp;例如192.168.1.1 &nbsp;0点-1点 访问了您网站 &nbsp; 在这个时段算一个IP。<br>&nbsp; &nbsp; &nbsp; &nbsp;如果192.168.1.1 &nbsp;0点-1点 再次访问您的网站 去重不计算IP。<br>&nbsp; &nbsp; &nbsp; &nbsp;如果192.168.1.1 &nbsp;1点-2点 又访问您的网站 在这个时段也算一个IP。<br>最高IP : &nbsp;指选择时间段范围内，某日访问IP最多的数值。<br>最高PV：指选择时间段范围内，某日访问量最高的数值。<br>日均流量：指选择时间范围内，平均每日流量。 (日均流量=总访问量/总天数)<br>人均访问量：指选择时间范围内，每个访客访问网站的PV数。(计算公式：人均访问量=访问量/唯一访客数)。<br>访问过程：每个访问者从进入您的网站开始访问，一直到最后离开您的网站，整个过程中发生的一切点击访问行为，称为一次访问过程。<br>访问入口：每次访问过程中，用户进入的第一个页面为访问入口页面。<br>访问出口：每次访问过程中，用户结束访问，离开前点击的最后一个页面为访问出口页面。<br>平均停留时间：所有访客的访问过程，访问持续时间的平均值。<br>平均访问页数：所有访客的访问过程，连续访问页面数的平均值。<br>贡献用户数：每个访问来源带来的独立访客数，即UV数；<br>贡献IP数：每个访问来源带来的独立IP数。<br>贡献PV数：每个访问来源带来的访客的一切后续访问行为所产生的PV数。<br>跳出率(Bounce Rate)：仅仅访问了单个页面的用户占全部访问用户的百分比，或者指从首页离开网站的用户占所有访问用户的百分比。<br>退出率(Exit Rate)：对网站某一页面而言。当该页为访客此次访问网站的最后一页时，该页面即为此次独立访问的退出页面，统计为有一次退出。相应的，该页面的退出率的计算公式为：<br>退出率=退出次数/总访问量*100%</p>
+<h2 id="网站访问统计分析基础">网站访问统计分析基础</h2><h3 id="网站访问统计有下面两种常用方式">网站访问统计有下面两种常用方式</h3><p>服务器日志分析(Web Server Log Files Analysis)<br>网页标签分析(Page Tagging or Web bugs Analysis)，一般通过第三方代码实现<br>另外，也可以通过客户端软件，例如alexa工具条进行粗略估计</p>
+<h3 id="服务器日志分析(Web_Server_Log_Files_Analysis)原理&nbsp;">服务器日志分析(Web Server Log Files Analysis)原理&nbsp;</h3><p>用户每次访问网页，在服务器端都会记录该访问的一些数据 通过软件对这些数据进行分析，就能获取到访问统计数据 Log Files 包含的数据：客户端 IP 、时间、请求方法、请求文件、 HTTP 协议版本、访问状态码（是否访问成功等）、文件大小、 Referrer 信息、 Agent 信息（浏览器、操作系统等）</p>
+<h3 id="服务器日志(Server_Log_Files)的样例">服务器日志(Server Log Files)的样例</h3><p>111.111.111.111 – - [08/Oct/2007:11:17:55 -0400] “GET /support.html HTTP/1.1″ 200 10801 “<a href="http://www.google.com/search?q=log+analyzer&amp;ie=utf-8&amp;oe=utf-8" target="_blank" rel="external">http://www.google.com/search?q=log+analyzer&amp;ie=utf-8&amp;oe=utf-8</a> &amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a” “Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.8.1.7) Gecko/20070914 Firefox/2.0.0.7″</p>
+<h3 id="服务器日志分析(Web_Server_Log_Files_Analysis)的历史&nbsp;">服务器日志分析(Web Server Log Files Analysis)的历史&nbsp;</h3><p>90 年代早期，通常用客户端请求数（ hits ）来计算访问数据。<br>早期网页格式单一 随着后来图片等其他多媒体元素引入网页，请求数已经不能再代表用户访问情况。<br>90 年代中期，引入两种数据： Page Views 和 Visits （或 Sessions ）<br>Page View ：用户对服务器端页面的一次请求<br>Visit ：唯一可标识客户端发起的一系列请求，在一定时间段不活动（通常 30 分钟）后该客户端再次发起的请求会被计算为一个新的 Visit<br>90 年代后期，随着搜索引擎爬虫、代理服务器、动态分配 ID 地址的出现，很难确定唯一用户访问者。<br>分析软件按 cookies 来追踪 visits 忽略可知的爬虫的访问请求，不计算在内 客户端缓存的应用也对 log files 分析带来了问题 用户对一个页面的第二次访问通常会从浏览器缓存里读取，这样不会对服务器产生新的请求 当然可以在服务器段配置不允许缓存，但这样会降低用户访问网站的效率和性能。</p>
+<h3 id="Page_Tagging_的原理">Page Tagging 的原理</h3><p>通过在页面代码中嵌入 JavaScript 代码 当页面加载时， JS 代码被执行 JS 代码将这次访问的数据传回服务器端 Page Tagging 可获取的数据。</p>
+<p>Google Analytics 判断用户是不是第一次访问这个网站。它是通过 cookie 来判断， 如果特定 Cookie 不存在它就会认为是新用户，它会种一个用户标识的 cookie ，并在 cookie 中记录下用户第一次访问时的 Referrer ，即来源网站。 如果是从搜索引擎过来的，它还会分离出用户搜索用的关键词并记录下来 判断用户是不是新的访问（ New Visit) ，并获取当前浏览的页面 URL ，标题， Referrer （来源网址），客户端信息（如屏幕分辨率，语言， flash 版本，是否支持 java ）</p>
+<h3 id="Page_Tagging_的历史&nbsp;">Page Tagging 的历史&nbsp;</h3><p>90 年代中期，网页计数器随处可见 通常是用图片显示该页面被访问的次数 90 年代后期，用 JS 在页面中引入不可见的小图片，除了计算该图片请求外，还传递一些访问者的其他参数 随着 Ajax 的兴起，页面中不再嵌入图片，而是通过一小段 Ajax 代码传递访问相关参数</p>
+<h3 id="Server_Log_Files_的优势">Server Log Files 的优势</h3><p>不需要在页面中加代码，服务器会自动记录 log files Log files 数据在网站自己的服务器上，并且是按标准格式存储，方便切换分析软件 Log files 包含搜索引擎爬虫的访问数据，有利于提供 SEO 数据 可以多域名的日志放在一起分析，在线统计系统对用户的标识是基于 Cookie 的，而 Cookie 是不能跨域名的，在这方面日志分析有天然的优势。<br>Log files 不需要额外的 DNS 查询，这样不会导致页面加载变慢或者统计 PV 丢失 Page Tagging 如果采用第三方服务提供商，需要因域名不同而产生额外的 DNS 查询 Web 服务器真实记录所有访问，而 Page Tagging 无法真实记录所有访问 Page Tagging 依赖于访问者客户端的配合，当客户端 JS 被禁用，或者 hosts 设置禁止访问某些域名 Page Tag 被漏加或多加 一些无法加 Page Tag ，例如 pdf 文件。</p>
+<h3 id="Server_Log_Files_的劣势">Server Log Files 的劣势</h3><p>使用比较麻烦，每次要分析日志，而且有的还要配置 web 服务器以输出合适的日志 搜集的客户端信息不如 Page Tagging 丰富，例如 flash 版本，是否安装 java 之类从日志是看不出来的 日志的存储管理也是挺头痛的事，尤其是当每天都产生几十 G 日志的时候 使用 CDN 时，需要合并日志分析</p>
+<h3 id="Page_Tagging_的优势&nbsp;">Page Tagging 的优势&nbsp;</h3><p>只要打开页面就会记录，即使从缓存中读取页面内容 搜集到一些通过日志不能搜集到的客户端信息，屏幕分辨率，语言， flash 版本，是否支持 java 等 可以记录更多的用户活动和信息，比如鼠标点击、页面停留时间等</p>
+<p>通过 Cookie 识别访问者，比依靠 IP 识别要更准确。因为通过 IP 识别用户在遇到很多用户通过代理服务器（比如网吧）时就会不准确。而且当用户过几天后再访问时，通过 Cookie 能很好的识别这是已经来过的用户。而日志分析以 IP 识别用户时，因为用户每次上网拨号可能会被动态分配不同的 IP ，就会比较难准确判断返回用户。</p>
+<h3 id="Page_Tagging_的劣势&nbsp;">Page Tagging 的劣势&nbsp;</h3><p>当客户端禁止 JS 或禁止 Cookie 时，都会影响统计结果，要么是完全统计不到，要么是出现错误的统计 存在一定误差，因为通过 JS 把客户端信息搜集起来再传回服务器实现统计，有时因为网络的延迟（或被屏蔽），会出现没有统计到的情况。而且和页面的载入速度也有关系， 把代码加在页面代码顶部或尾部统计结果都是会有差异的 （有数据显示这个差异会达到 4-5% ）。</p>
+<p>不能统计用户对图像，视频，音频等文件的访问，因为这些文件不能插入统计代码 不能统计带宽信息 统计信息被第三方掌握，有安全上的危险 Page Tagging 需要在页面中加代码，如果切换统计服务提供商的话，需要大批量更新代码</p>
+<h3 id="访问统计分析原则&nbsp;">访问统计分析原则&nbsp;</h3><p>看趋势而不是看孤立数据是网站分析最重要的原则 由于网站分析工具是精确的，因此虽然不能准确反映数据，却能够准确反映趋势 因为网站分析工具的精确性，如果整体值比实际准确值偏小 20% 的话，那么构成整体的各部分也会同比比各自的准确值偏小 20% 。因此，比较所需要的细分仍然能够满足分析的需要。</p>
+<h3 id="跳出率与退出率分析">跳出率与退出率分析</h3><p>Bounce Rate ： Bounce Rate 既是衡量整个网站的度量 （即 Bounce Rate 是指 Bounce 掉的 Visit 占所有访问网站的 Visit 的百分比）， 也是衡量页面的度量 。 Bounce Rate 在衡量页面时，只能用来衡量 Landing Page （入口页面）。 Exit Rate 只能用来衡量页面，无法衡量整个网站，因此说某个网站的 Exit Rate 是多少是没有意义的。原因在与，每个访问最终都将离开网站，因此每个网站的 Exit Rate = 100% ，毫无疑问。<br>Bounce Rate 的大小说明了网站 Landing Page （入口页面）的质量。如果一个网站的 Bounce Rate 非常高，那么这个网站所有的 Landing Page 的质量都值得检查。 Exit Rate 的大小则直接说明了每个页面的内容质量的好坏。如果一个页面的 Exit Rate 很高，有两种可能性： a. 页面没有引起读者兴趣，读者没有再点击页面上的其他链接，而是关闭了浏览器窗口。 b. 页面上没有链接（或是链接很少）。</p>
+<h3 id="常用第三方访问统计平台">常用第三方访问统计平台</h3><p><a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a><br><a href="http://www.cnzz.com/" target="_blank" rel="external">CNZZ</a><br><a href="http://www.google.com/intl/zh-CN/analytics/" target="_blank" rel="external">Google Analytics</a><br><a href="http://www.51.la/" target="_blank" rel="external">「我要啦」免费统计</a><br><a href="http://count.51yes.com/" target="_blank" rel="external">&nbsp;51Yes&nbsp;</a><br><a href="http://www.linezing.com/" target="_blank" rel="external">量子恒道网站统计&nbsp;</a></p>
+<p>参考<br><a href="http://en.wikipedia.org/wiki/Web_analytics" target="_blank" rel="external">http://en.wikipedia.org/wiki/Web_analytics</a><br><a href="http://help.cn.yahoo.com/answerpage_2430.html" target="_blank" rel="external">http://help.cn.yahoo.com/answerpage_2430.html</a><br><a href="http://www.slideshare.net/eolcn/ss-4325767" target="_blank" rel="external">http://www.slideshare.net/eolcn/ss-4325767</a><div class="blogger-post-footer"><a href="http://www.tianrunlin.com/" target="_blank" rel="external">田润林的博客</a></div></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2012/10/17/blog-log/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          网站日志
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2012/10/09/bloggerblogspot/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何给blogger/blogspot增加云标签</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="blog-post_11" data-title="网站访问统计分析基础" data-url="http://yoursite.com/2012/10/11/blog-post_11/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 田润林
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/mobile.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>

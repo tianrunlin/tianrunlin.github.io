@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>使用cloudflare（CDN）加速自己的网站 | 田润林的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="又开始倒腾了，这次是捣腾的是cloudflare（CDN）。先介绍一下相关概念
+CDNCDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用cloudflare（CDN）加速自己的网站">
+<meta property="og:url" content="http://yoursite.com/2012/11/21/accelerate-website-with-cdn/index.html">
+<meta property="og:site_name" content="田润林的博客">
+<meta property="og:description" content="又开始倒腾了，这次是捣腾的是cloudflare（CDN）。先介绍一下相关概念
+CDNCDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况">
+<meta property="og:updated_time" content="2015-06-13T04:28:42.912Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用cloudflare（CDN）加速自己的网站">
+<meta name="twitter:description" content="又开始倒腾了，这次是捣腾的是cloudflare（CDN）。先介绍一下相关概念
+CDNCDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况">
+  
+    <link rel="alternative" href="/atom.xml" title="田润林的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">田润林</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">运营推广、数据分析以及其他</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Xappengine/" style="font-size: 17.14px;">Xappengine</a> <a href="/tags/blogger优化/" style="font-size: 18.57px;">blogger优化</a> <a href="/tags/blogger挂件/" style="font-size: 12.86px;">blogger挂件</a> <a href="/tags/chrome插件/" style="font-size: 10px;">chrome插件</a> <a href="/tags/google/" style="font-size: 12.86px;">google</a> <a href="/tags/代理/" style="font-size: 14.29px;">代理</a> <a href="/tags/博客相关/" style="font-size: 20px;">博客相关</a> <a href="/tags/图册/" style="font-size: 11.43px;">图册</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/捣腾/" style="font-size: 10px;">捣腾</a> <a href="/tags/排名/" style="font-size: 15.71px;">排名</a> <a href="/tags/搜索引擎/" style="font-size: 10px;">搜索引擎</a> <a href="/tags/时事新闻/" style="font-size: 11.43px;">时事新闻</a> <a href="/tags/知乎/" style="font-size: 11.43px;">知乎</a> <a href="/tags/网站分析/" style="font-size: 12.86px;">网站分析</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">田润林</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">田润林</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">运营推广、数据分析以及其他</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/tianrunlin" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/tianrunlin" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/tianrunlin" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-accelerate-website-with-cdn" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/11/21/accelerate-website-with-cdn/" class="article-date">
+  	<time datetime="2012-11-21T14:11:00.000Z" itemprop="datePublished">2012-11-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用cloudflare（CDN）加速自己的网站
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客相关/">博客相关</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>又开始倒腾了，这次是捣腾的是cloudflare（CDN）。<br>先介绍一下相关概念</p>
+<h4 id="CDN">CDN</h4><p>CDN的全称是Content Delivery Network，即内容分发网络。其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况以及到用户的距离和响应时间等综合信息将用户的请求重新导向离用户最近的服务节点上。其目的是使用户可就近取得所需内容，解决 Internet网络拥挤的状况，提高用户访问网站的响应速度。</p>
+<a id="more"></a>
+<h4 id="CloudFlare">CloudFlare</h4><p><a href="https://www.cloudflare.com/" target="_blank" rel="external">CloudFlare</a> 是一家功能非常强大的免费 CDN 免费加速服务，它是通过反向代理（reverse proxy）提供网站加速服务，为站长解决了 jpg/JS/CSS 这些静态文件到 CDN 上的问题，并且通过它部署在全球各大洲的缓存结点服务器（详细列表），提供高效的加速服务。<br>CloudFlare 除了基本的把网页的静态文件（JPG/JS/CSS）推送到它的服务器上之外，还提供了详细的网站流量报表，网站攻击的基本防御，JS 和 CSS 文件的自动 minify，以及其他许多方便的功能，并且这些服务都是免费的。<br>当然 CloudFlare 也有 PRO 收费版，相比免费版 24 小时才能看到报表，PRO 版的报表几乎是实时的，每 15 分钟就有一次统计，PRO 版还提供 SSL 连接等，不过对于普通用户来说，免费版本已经足够用了。</p>
+<h4 id=""> </h4><p>二、开通cloudflare（CDN）加速操作方法很简单，具体步骤如下<br>1、注册你自己的CloudFlare 的账户<br>2、添加你想使用cloudflare（CDN）加速的域名<br>3、cloudflare会扫描你的这个域名的相关的dns记录<br>4、一些简单的设置，你可以删减它扫描记录的结果<br>5、在你原来的域名管理面板里把将域名默认的域名解析服务器（Name Server）改为cloudflare提供的域名解析服务器</p>
+<h4 id="三、我的域名是godaddy域名，修改GoDaddy域名的DNS服务器步骤如下：">三、我的域名是godaddy域名，修改GoDaddy域名的DNS服务器步骤如下：</h4><p>1、 登录GoDaddy账号，进入“My Account”;<br>2、 单击“Domains域名”，下拉页面“Domains”项下就是你的域名列表了；<br>3、 点击“Launch”进入域名管理面板（control Panel），也可以点击相应域名后“Launch”；<br>4、 在一排图标中找到“Nameservers”图标，选择“Set Nameservers”；</p>
+<h4 id="四、CDN加速对网站搜索排名影响">四、CDN加速对网站搜索排名影响</h4><p>提高网站访问速度：据调查，用户打开一个网站能忍受的时间一般不超过30秒。网站使用CDN加速后，当用户访问网站时CDN加速系统根据一定的算法给出最优的缓存服务器记录结果，从而提高网站的响应时间，提升用户体验;<br>CDN加速还可以降低服务器运维成本：网站使用CDN加速后，网站的服务器负载、带宽等都会有明显下降;由于CDN在全国部署多个节点，从而避免了源站服务器单点故障的情况;还可应付突性发的数据风暴;<br>保护网站资源：网站使用CDN加速后，通过配置防盗链功能来保护某些资源被其它网站引用，也可以通过白名单配置例外。还可以配置禁止某些IP地址，User-Agent对网站的访问，而这一切只需要在界面上进行简单的配置。　<br>说到这里，想必大家对CDN这项技术有了一定的了解了，那么CDN对于SEO来说到底有没有影响呢?我们还是先了解一下网站排名的关键是什么?外链?内容?网站结构?域名历史悠久?还是流量?这些固然重要，但更核心的在于用户体验度。做站久了的站长都可能会有这样的体会，添加一点点对用户友好的设置，都可能会换来排名的提高。因为你的用户体验好了，跳出率就低了，二次回头的客户也多了，流量也跟着大了，排名自然就上去了。所以建议对网站的SEO重点还是放在用户体验上面，看看我们的网站内容是否能满足用户需求?用户是否很方便找到产品?网站打开速度是否能让用户接受，谁的时间都是有限的，不会打开一个页面一直等待下去?以及怎么样让自己的网站不受攻击等等。所以CDN加速对网站是百利无害的。</p>
+<p>网站启用CDN,对网站排名和收录有影响吗<br>一直都有南电北联的说法，这是因为电信和联通两大运营商不能完全互联互通，这就导致一些电信服务器的网站，在联通用户访问的时候响应变得很慢，同样，在电信用户浏览联通服务器的网站的时候网站打开速度也会变得很慢，这严重影响了用户体验，也间接影响网站的收录和排名。<br>所以，由于以上原因，很多网站管理员会启用CDN加速技术，以提高网站响应速度，缩短用户等待时间，但有些站长会担心启用CDN加速技术会影响网站的排名和收录，进而影响网络营销效果。它对网站的排名收录有没有影响呢，据百度官方解释是没有影响的，因此各站长大可以放心启用该技术</p>
+<p>先试用cloudflare一段时间，等过几天监控宝和阿里云云监控的响应速度数据出来后比较一下，如果有改善的话就用下去了，不然就再改回去。嗯，就这样。<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/" target="_blank" rel="external">田润林的博客</a></div></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2012/11/21/5-free-picture-beds/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          建站资源 – 5款免费的图片空间（支持外链）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2012/11/17/blog-template/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">田润林博客的模版</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="accelerate-website-with-cdn" data-title="使用cloudflare（CDN）加速自己的网站" data-url="http://yoursite.com/2012/11/21/accelerate-website-with-cdn/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 田润林
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/mobile.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>
