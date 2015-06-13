@@ -5,7 +5,7 @@
   <subtitle><![CDATA[运营推广、数据分析以及其他]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tianrunlin.com//"/>
-  <updated>2015-06-13T04:30:18.461Z</updated>
+  <updated>2015-06-13T15:48:27.288Z</updated>
   <id>http://www.tianrunlin.com//</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.tianrunlin.com/2012/12/21/blogger-summary-auto-display/"/>
     <id>http://www.tianrunlin.com/2012/12/21/blogger-summary-auto-display/</id>
     <published>2012-12-21T15:00:00.000Z</published>
-    <updated>2015-06-13T04:30:18.461Z</updated>
+    <updated>2015-06-13T15:48:27.288Z</updated>
     <content type="html"><![CDATA[<p>让你的blog显示文章摘要，也就是每篇文章只显示预览。<br>首先下载模版并备份，然后<br>1、在HTML模板中加入以下代码：</p>
 <p>&nbsp;.post-body2{ BORDER-RIGHT: 0px; BORDER-TOP: 0px; OVERFLOW: hidden; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; HEIGHT: 150px; TEXT-OVERFLOW: ellipsis; } 2、找到&lt;p&gt;&lt;data:post.body&gt;&lt;/p&gt;改为以下代码： &lt;b:if cond=’data:blog.pageType == “item”‘&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;b:else/&gt; &lt;div class=’post-body2’&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;/div&gt;……&lt;p&gt; &lt;a expr:href=’data:post.url’ title=’阅读全文’&gt;&lt;b&gt;[阅读全文]&lt;/b&gt;&lt;/a&gt;&lt;/p&gt; &lt;/b:if&gt;<br><a id="more"></a></p>
 <p>这样以后发帖就不需要选择显示部分了，自动截取一部分显示出来。 *如果想要列表中不显示摘要，第一步可以省略，第二步改为：</p>
