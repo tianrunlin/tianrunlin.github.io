@@ -53,6 +53,11 @@
 							<div class="ribbon"></div>
 						</div>
 						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
 						
 						<div class="icon-wrap icon-me hide" data-idx="3">
 							<div class="user"></div>
@@ -67,6 +72,8 @@
 					<ul class="tips-inner">
 						<li>菜单</li>
 						<li>标签</li>
+						
+						<li>友情链接</li>
 						
 						
 						<li>关于我</li>
@@ -106,16 +113,24 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Xappengine/" style="font-size: 17.14px;">Xappengine</a> <a href="/tags/blogger优化/" style="font-size: 18.57px;">blogger优化</a> <a href="/tags/blogger挂件/" style="font-size: 12.86px;">blogger挂件</a> <a href="/tags/chrome插件/" style="font-size: 10px;">chrome插件</a> <a href="/tags/google/" style="font-size: 12.86px;">google</a> <a href="/tags/代理/" style="font-size: 14.29px;">代理</a> <a href="/tags/博客相关/" style="font-size: 20px;">博客相关</a> <a href="/tags/图册/" style="font-size: 11.43px;">图册</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/捣腾/" style="font-size: 10px;">捣腾</a> <a href="/tags/排名/" style="font-size: 15.71px;">排名</a> <a href="/tags/搜索引擎/" style="font-size: 10px;">搜索引擎</a> <a href="/tags/时事新闻/" style="font-size: 11.43px;">时事新闻</a> <a href="/tags/知乎/" style="font-size: 11.43px;">知乎</a> <a href="/tags/网站分析/" style="font-size: 12.86px;">网站分析</a>
+						<a href="/tags/Xappengine/" style="font-size: 17.14px;">Xappengine</a> <a href="/tags/blogger优化/" style="font-size: 18.57px;">blogger优化</a> <a href="/tags/blogger挂件/" style="font-size: 12.86px;">blogger挂件</a> <a href="/tags/chrome插件/" style="font-size: 10px;">chrome插件</a> <a href="/tags/google/" style="font-size: 12.86px;">google</a> <a href="/tags/hexo/" style="font-size: 11.43px;">hexo</a> <a href="/tags/代理/" style="font-size: 14.29px;">代理</a> <a href="/tags/博客相关/" style="font-size: 20px;">博客相关</a> <a href="/tags/图册/" style="font-size: 11.43px;">图册</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/捣腾/" style="font-size: 10px;">捣腾</a> <a href="/tags/排名/" style="font-size: 15.71px;">排名</a> <a href="/tags/搜索引擎/" style="font-size: 10px;">搜索引擎</a> <a href="/tags/时事新闻/" style="font-size: 11.43px;">时事新闻</a> <a href="/tags/知乎/" style="font-size: 11.43px;">知乎</a> <a href="/tags/网站分析/" style="font-size: 12.86px;">网站分析</a>
 					</div>
 				</section>
 				
 				
 				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.yijiaseo.com/">亿家SEO</a>
+			        
+			        </div>
+				</section>
+				
 
 				
 				
-				<section class="switch-part switch-part3">
+				<section class="switch-part switch-part4">
 				
 					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
 				</section>
@@ -169,6 +184,118 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-bloggerblogspot" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/10/09/bloggerblogspot/" class="article-date">
+  	<time datetime="2012-10-09T00:00:00.000Z" itemprop="datePublished">2012-10-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2012/10/09/bloggerblogspot/">如何给blogger/blogspot增加云标签</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><span style="background-color: white; font-family: inherit;">下载你的模板，做好备份。将标签部分代码（不同模板代码可能略微不同），如下</span></p>
+<p><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&lt;b:widget id=’Label1’ locked=’false’ title=’labels’ type=’Label’&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&lt;b:includable id=’main’&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &lt;b:if cond=’data:title’&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &lt;/b:if&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &lt;div class=’widget-content’&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &lt;ul&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &lt;b:loop values=’data:labels’ var=’label’&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &lt;li&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;b:if cond=’data:blog.url == data:label.url’&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span expr:dir=’data:blog.languageDirection’&gt;&lt;data:label.name/&gt;&lt;/span&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;b:else/&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a expr:dir=’data:blog.languageDirection’ expr:href=’data:label.url’&gt;&lt;data:label.name/&gt;&lt;/a&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/b:if&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;span dir=’ltr’&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &nbsp; &lt;/li&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &lt;/b:loop&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &nbsp; &lt;/ul&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&nbsp; &lt;/div&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&lt;/b:includable&gt;</span><br><span style="background-color: white; color: blue; font-family: Georgia, Times New Roman, serif; font-size: x-small;">&lt;/b:widget&gt;</span><br><span style="background-color: white; font-family: inherit;">替换为</span><br><span style="background-color: white; font-family: inherit;"></span><br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blogger挂件/">blogger挂件</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2012/10/09/bloggerblogspot/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-bloggerblogspotwidget" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/10/08/bloggerblogspotwidget/" class="article-date">
+  	<time datetime="2012-10-08T04:00:00.000Z" itemprop="datePublished">2012-10-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2012/10/08/bloggerblogspotwidget/">推荐几个寻找blogger/blogspot插件(widget)网站</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>当我们给自己blogger/blogspot添加新功能时，首先想到的是利用插件实现。可是blogger自己提供的插件数量实在是太少了，功能也太单一。因而，大多数时候我们还是通过第三方插件（widget）来实现相关功能。可是有时候想要快速找到称心如意的插件（widget）并不是一件容易的事。<br>下面，我就推荐几个blogger插件(widget)网站，方便大家寻找。<br><a href="http://www.bloggerplugins.org/" target="_blank" rel="external">http://www.bloggerplugins.org/</a>&nbsp;上面好玩的插件（widget）很多，而且安装步骤也很详细<br><a href="http://www.way2blogging.org/" target="_blank" rel="external">http://www.way2blogging.org/</a>&nbsp; 介绍一些最新插件（widget）和一些tips<br><a href="http://www.widgetbox.com/tag/blogger" target="_blank" rel="external">http://www.widgetbox.com/tag/blogger</a>&nbsp;插件也不少<br><a href="http://www.helperblogger.com/search/label/Blogger%20Widgets" target="_blank" rel="external">http://www.helperblogger.com/search/label/Blogger%20Widgets</a>&nbsp;也有一些插件（widget）</p>
+<div style="font-family: 'PT Sans', Arial, Helvetica, sans-serif; line-height: 1.55em; padding: 12px 0px 11px; text-align: left;"></div>
+
+<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blogger挂件/">blogger挂件</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
   
     <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -587,118 +714,6 @@
         <p class="article-more-link">
           <a  href="/2012/10/03/blog-post_3/#more">阅读全文 >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
-    <article id="post-baesae-gae" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/10/03/baesae-gae/" class="article-date">
-  	<time datetime="2012-10-03T06:13:00.000Z" itemprop="datePublished">2012-10-03</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/10/03/baesae-gae/">BAE、SAE 与 GAE 对比</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><span style="font-family: inherit;"><br></span></p>
-<div><div style="line-height: 20px;"><span style="font-family: inherit;">从数据库、应用配置、计费、域名绑定、平台服务对比了 BAE、SAE 以及 GAE 的优劣，最后给出云平台选型的建议。</span></div><span style="font-family: inherit;">数据库<br>应用配置<br>计费与配额<br>域名绑定<br>平台服务<br>结论</span><br><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 不支持 InnoDB（可申请支持），BAE 默认支持。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 不支持数据库连接池（c3p0、BoneCP 已测不支持），数据库连接不能长时间保持。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 使用 Datasotre 存取数据，最近也提供了云 SQL（MySQL），但申请比较困难，配额/性能笔者未测试过。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">另外，SAE 显式给出了主从库的访问方式，应用可以比较灵活地设计存取策略，例如读写分离。并且 SAE 是每个应用都拥有自己的数据库，而 BAE 是所有应用共用一个库。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 的 duapp-web.xml 基本是抄袭 GAE 的 appengine-web.xml，元素基本一致。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">比较奇葩的是 BAE 静态资源配置默认所有后缀为静态文件类型（例如 .html）的请求路径都默认假设为静态资源，需要在 duapp-web.xml 中指定排除。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 按应用天计费”豆豆”，服务也按流量计费、CPU 时间、调用次数计费。注册或活动送配额，否则需要购买。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 目前还没有详细的计费，只限定了应用数。公测结束后应该会细化计费模型。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 目前的计费模型主要是按 API 调用计数，流量分为 In/Out 配额。每天会定时刷新免费配额。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">综上，GAE 的计费一目了然，主要就是 API 调用次数；SAE 的计费比较复杂，不同服务有不同的计费策略；BAE 还没有明确的计费模型。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 开通企业套件后随便绑，企业套件有免费版。</span></div><div style="line-height: 20px;"><span style="font-family: inherit; text-decoration: line-through;">SAE 需要确认通过域名备案才能绑定，并且绑定后的流量计费翻倍。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 目前可以随便绑，但没备案的话绑定域名的请求走海外中转，流量计费翻倍（原二级域名请求计费不变）。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 目前可以随便绑，但没备案的后果自负。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">SAE 提供了 SDK 包，包含了开发需要的本地服务实现。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">BAE 则分别提供了服务 Jar，调用方式按不同服务而异。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">GAE 提供了完整的 SDK 包，包含了开发需要的本地运行环境和配置客户端。</span></div><div style="line-height: 20px;"><span style="font-family: inherit;">综上，GAE 提供了完整的平台化服务，覆盖了从开发到上线运维的一系列工具；SAE 则提供了部分工具，平台化不完整，增加了开发、运维难度；BAE 则是分别提供不同服务给开发，没有统一的 SDK 与调用方式。</span><br><span style="font-family: inherit;"></span><br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Xappengine/">Xappengine</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2012/10/03/baesae-gae/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
-    <article id="post-blog-post" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/10/01/blog-post/" class="article-date">
-  	<time datetime="2012-10-01T15:41:00.000Z" itemprop="datePublished">2012-10-01</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/10/01/blog-post/">博客不翻墙也能正常显示了</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>换上了iNove模板， 删除国内不能正常显示(也基本不能用)的小部件。不翻墙情况下，使用IE(9)、chrome、firefox、opera等浏览器测试，打开主页，元素均显示正常，除了主栏和侧栏没有对齐这个小瑕疵外。说明<a href="http://www.tianrunlin.com/">田润林的博客</a>不翻墙也能正常访问了。小庆祝一下，哈哈。</p>
-<p>在此吐槽一下，GFW还真是阻碍生产力发展的落后代表啊。</p>
-<p>附：<br><a href="http://pan.baidu.com/share/link?shareid=67781&amp;uk=1577287841" target="_blank" rel="external">iNove模板下载</a>，喜欢的朋友可以试一下。<div class="blogger-post-footer"><a href="http://www.tianrunlin.com/">田润林的博客</a></div></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客相关/">博客相关</a></li></ul>
-	</div>
-
-      
-
       
       <div class="clearfix"></div>
     </div>

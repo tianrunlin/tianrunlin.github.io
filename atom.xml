@@ -5,7 +5,7 @@
   <subtitle><![CDATA[运营推广、数据分析以及其他]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tianrunlin.com//"/>
-  <updated>2015-06-13T15:48:27.288Z</updated>
+  <updated>2015-06-13T16:49:16.137Z</updated>
   <id>http://www.tianrunlin.com//</id>
   
   <author>
@@ -16,11 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[hexo官方插件（模块）的功能以及使用介绍]]></title>
+    <link href="http://www.tianrunlin.com/2015/06/14/hexo-plugins-introduction/"/>
+    <id>http://www.tianrunlin.com/2015/06/14/hexo-plugins-introduction/</id>
+    <published>2015-06-13T16:40:11.000Z</published>
+    <updated>2015-06-13T16:49:16.137Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://www.tianrunlin.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[将博客从blogger迁移到hexo遇到的问题（坑），解决方法以及其他细节]]></title>
+    <link href="http://www.tianrunlin.com/2015/06/14/blogger-to-hexo-problem-and-solution/"/>
+    <id>http://www.tianrunlin.com/2015/06/14/blogger-to-hexo-problem-and-solution/</id>
+    <published>2015-06-13T16:37:27.000Z</published>
+    <updated>2015-06-13T16:48:04.042Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://www.tianrunlin.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[让Blogger只显示摘要的方法]]></title>
     <link href="http://www.tianrunlin.com/2012/12/21/blogger-summary-auto-display/"/>
     <id>http://www.tianrunlin.com/2012/12/21/blogger-summary-auto-display/</id>
     <published>2012-12-21T15:00:00.000Z</published>
-    <updated>2015-06-13T15:48:27.288Z</updated>
+    <updated>2015-06-13T16:46:18.064Z</updated>
     <content type="html"><![CDATA[<p>让你的blog显示文章摘要，也就是每篇文章只显示预览。<br>首先下载模版并备份，然后<br>1、在HTML模板中加入以下代码：</p>
 <p>&nbsp;.post-body2{ BORDER-RIGHT: 0px; BORDER-TOP: 0px; OVERFLOW: hidden; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; HEIGHT: 150px; TEXT-OVERFLOW: ellipsis; } 2、找到&lt;p&gt;&lt;data:post.body&gt;&lt;/p&gt;改为以下代码： &lt;b:if cond=’data:blog.pageType == “item”‘&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;b:else/&gt; &lt;div class=’post-body2’&gt; &lt;p&gt;&lt;data:post.body/&gt;&lt;/p&gt; &lt;/div&gt;……&lt;p&gt; &lt;a expr:href=’data:post.url’ title=’阅读全文’&gt;&lt;b&gt;[阅读全文]&lt;/b&gt;&lt;/a&gt;&lt;/p&gt; &lt;/b:if&gt;<br><a id="more"></a></p>
 <p>这样以后发帖就不需要选择显示部分了，自动截取一部分显示出来。 *如果想要列表中不显示摘要，第一步可以省略，第二步改为：</p>
@@ -451,51 +481,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>在gae后台查询日志比较麻烦，一来加载速度不是很快，二来每页最多显示50条结果，如果结果很多的，需要一直翻页下去。<br>所以，导出日志到本地是一个替代方案，但是在控制面板上并没有导出日志的选项。<br>怎么办呢？我们可以通过Google App Engine Launch]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[那些年爬过我页面的蜘蛛（爬虫、机器人）]]></title>
-    <link href="http://www.tianrunlin.com/2012/12/02/spider-crawler-bot-visit-my-blog/"/>
-    <id>http://www.tianrunlin.com/2012/12/02/spider-crawler-bot-visit-my-blog/</id>
-    <published>2012-12-02T06:55:34.000Z</published>
-    <updated>2015-06-13T04:32:14.735Z</updated>
-    <content type="html"><![CDATA[<p>在gae后台查看了一下日志（logs选项），发现下面的这些搜索引擎爬虫（蜘蛛）爬过我的页面（不完全统计），把它们名字和的打的旗号（使用的useragent）列出来：</p>
-<p>msnbot/2.0b (+<a href="http://search.msn.com/msnbot.htm" target="_blank" rel="external">http://search.msn.com/msnbot.htm</a>)<br>微软家的msn机器人</p>
-<p>ia_archiver (+<a href="http://www.alexa.com/site/help/webmasters" target="_blank" rel="external">http://www.alexa.com/site/help/webmasters</a>; crawler@alexa.com)<br>alexa家的爬虫</p>
-<p>Mozilla/5.0 (compatible; AhrefsBot/4.0; +<a href="http://ahrefs.com/robot/" target="_blank" rel="external">http://ahrefs.com/robot/</a>)<br>ahrefs的外链机器人<br><a id="more"></a></p>
-<p>Mozilla/5.0 (compatible; Baiduspider/2.0; +<a href="http://www.baidu.com/search/spider.html" target="_blank" rel="external">http://www.baidu.com/search/spider.html</a>)<br>百度蜘蛛，网页搜索蜘蛛</p>
-<p>Mozilla/5.0(compatible; Sosospider/2.0; +<a href="http://help.soso.com/webspider.htm" target="_blank" rel="external">http://help.soso.com/webspider.htm</a>)<br>搜搜网页蜘蛛</p>
-<p>Sogou web spider/4.0(+<a href="http://www.sogou.com/docs/help/webmasters.htm#07" target="_blank" rel="external">http://www.sogou.com/docs/help/webmasters.htm#07</a>)<br>搜狗网页蜘蛛</p>
-<p>Baiduspider-image+(+<a href="http://www.baidu.com/search/spider.htm" target="_blank" rel="external">http://www.baidu.com/search/spider.htm</a>)<br>百度蜘蛛，图片搜索蜘蛛</p>
-<p>Mozilla/5.0+(compatible;+googlebot/2.1;++<a href="http://www.google.com/bot.html" target="_blank" rel="external">http://www.google.com/bot.html</a>)<br>谷歌家的蜘蛛</p>
-<p>PagesInventory (robot <a href="http://www.pagesinventory.com" target="_blank" rel="external">http://www.pagesinventory.com</a>)<br>PagesInventory.com蜘蛛</p>
-<p>这是他们的介绍：PagesInventory.com is a free service that provides information about webhosting and domain names, reverse IP (+Ipv6) search and some other services.<br>提供主机和域名信息查询，ip反查域名等服务的一家公司。</p>
-<p>Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)<br>ezooms.com家的，名号很奇葩啊，貌似是提供ip反查地理地址服务的</p>
-<p>Mozilla/5.0 (compatible; bingbot/2.0; +<a href="http://www.bing.com/bingbot.htm" target="_blank" rel="external">http://www.bing.com/bingbot.htm</a>)<br>微软家的bing搜索机器人</p>
-<p>Mozilla/5.0 (compatible; YandexBot/3.0; +<a href="http://yandex.com/bots" target="_blank" rel="external">http://yandex.com/bots</a>)<br>yandex家的机器人，俄罗斯份额第一的搜索引擎</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>在gae后台查看了一下日志（logs选项），发现下面的这些搜索引擎爬虫（蜘蛛）爬过我的页面（不完全统计），把它们名字和的打的旗号（使用的useragent）列出来：</p>
-<p>msnbot/2.0b (+<a href="http://search.msn.com/msnbot.htm">http://search.msn.com/msnbot.htm</a>)<br>微软家的msn机器人</p>
-<p>ia_archiver (+<a href="http://www.alexa.com/site/help/webmasters">http://www.alexa.com/site/help/webmasters</a>; crawler@alexa.com)<br>alexa家的爬虫</p>
-<p>Mozilla/5.0 (compatible; AhrefsBot/4.0; +<a href="http://ahrefs.com/robot/">http://ahrefs.com/robot/</a>)<br>ahrefs的外链机器人<br>]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[给推特和新浪微博加个尾巴]]></title>
-    <link href="http://www.tianrunlin.com/2012/11/24/add-tail-for-sina-weibo-and-twitter/"/>
-    <id>http://www.tianrunlin.com/2012/11/24/add-tail-for-sina-weibo-and-twitter/</id>
-    <published>2012-11-24T14:13:30.000Z</published>
-    <updated>2015-06-12T13:20:22.992Z</updated>
-    <content type="html"><![CDATA[<p>推特的尾巴加起来很容易，doodle后台就有相关的模块。<br>成功后在doodle后台发送推文的效果图如下（貌似推特上看不了博客的发送来源，通过发微却能看到）：<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/twitter%20tail.png" alt=""><br>新浪微博网站接入还要进行审核ing，<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/weibo.png" alt=""><br>等待审核通过后新浪也可以加尾巴了。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>推特的尾巴加起来很容易，doodle后台就有相关的模块。<br>成功后在doodle后台发送推文的效果图如下（貌似推特上看不了博客的发送来源，通过发微却能看到）：<br><img src="http://files.myopera.com/tianrunlin/albums]]>
     </summary>
     
   </entry>
