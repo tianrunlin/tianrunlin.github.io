@@ -5,7 +5,7 @@
   <subtitle><![CDATA[运营推广、数据分析以及其他]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tianrunlin.com//"/>
-  <updated>2015-06-13T16:49:16.137Z</updated>
+  <updated>2015-06-23T15:35:32.802Z</updated>
   <id>http://www.tianrunlin.com//</id>
   
   <author>
@@ -14,6 +14,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[邮件营销edm：使用sendcloud给自己博客的博友发送订阅邮件]]></title>
+    <link href="http://www.tianrunlin.com/2015/06/23/send-notification-email-to-blogger-with-sendcloud/"/>
+    <id>http://www.tianrunlin.com/2015/06/23/send-notification-email-to-blogger-with-sendcloud/</id>
+    <published>2015-06-23T15:19:37.000Z</published>
+    <updated>2015-06-23T15:35:32.802Z</updated>
+    <content type="html"><![CDATA[<p>相信看到这篇博客的部分人是通过我最近发送的<a href="http://sendcloud.sohu.com/?utm_source=www.tianrunlin.com" target="_blank" rel="external">sendcloud</a>订阅邮件访问我的博客的。<br>在这篇博客里我将详细描述一下如何使用sendcloud订阅邮件来给自己留言博友发送订阅邮件<br><a id="more"></a><br>未完待续</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>相信看到这篇博客的部分人是通过我最近发送的<a href="http://sendcloud.sohu.com/?utm_source=www.tianrunlin.com">sendcloud</a>订阅邮件访问我的博客的。<br>在这篇博客里我将详细描述一下如何使用sendcloud订阅邮件来给自己留言博友发送订阅邮件<br>]]>
+    
+    </summary>
+    
+      <category term="邮件营销edm" scheme="http://www.tianrunlin.com/tags/%E9%82%AE%E4%BB%B6%E8%90%A5%E9%94%80edm/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[hexo官方插件（模块）的功能以及使用介绍]]></title>
@@ -462,25 +479,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>一波四折，新浪微博终于添加成功了，先秀一下图片<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/0%E5%BE%AE%E5%8D%9A%E5%B0%BE%E5%B7%B4.png" alt="]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[如何导出（下载）GoogleAppEngine（gae）日志到本地]]></title>
-    <link href="http://www.tianrunlin.com/2012/12/02/how-to-Download-Export-google-App-Engine-gae-logs/"/>
-    <id>http://www.tianrunlin.com/2012/12/02/how-to-Download-Export-google-App-Engine-gae-logs/</id>
-    <published>2012-12-02T07:48:35.000Z</published>
-    <updated>2015-06-12T13:20:22.991Z</updated>
-    <content type="html"><![CDATA[<p>在gae后台查询日志比较麻烦，一来加载速度不是很快，二来每页最多显示50条结果，如果结果很多的，需要一直翻页下去。<br>所以，导出日志到本地是一个替代方案，但是在控制面板上并没有导出日志的选项。<br>怎么办呢？我们可以通过Google App Engine Launcher的appcfg.py从GAE导出日志到本地进行分析。</p>
-<p>运行如下的命令行<br>appcfg.py request_logs appname/ output.txt<br>记住用你自己gae应用的名字替换“appname”，<br>这个命令会从最后一天开始导出日志到output.txt</p>
-<p>当然你也可以添加时间选项<br>appcfg.py —num_days=5 request_logs appname/ output.txt<br>这个命令会导出最后五天的运行日志</p>
-<p>appcfg.py —num_days=0 request_logs appname/ output.txt<br>num_days=0代表导出所有的日志，所以这个命令会导出所有日志</p>
-<p>如果你想导出你还没有导出日志，可以使用下面的命令<br>appcfg.py —append request_logs appname/ output.txt<br>它会扫描你已经下载日志，并下载你还没有下载日志。</p>
-<p>—————-我是分割线————-选译自<a href="http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html-------" target="_blank" rel="external">http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html-------</a><br>按照他说的方法不能导出日志，求解决方案啊</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>在gae后台查询日志比较麻烦，一来加载速度不是很快，二来每页最多显示50条结果，如果结果很多的，需要一直翻页下去。<br>所以，导出日志到本地是一个替代方案，但是在控制面板上并没有导出日志的选项。<br>怎么办呢？我们可以通过Google App Engine Launch]]>
     </summary>
     
   </entry>
