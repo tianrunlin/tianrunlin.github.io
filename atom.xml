@@ -5,7 +5,7 @@
   <subtitle><![CDATA[运营推广、数据分析以及其他]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tianrunlin.com//"/>
-  <updated>2015-06-23T15:35:32.802Z</updated>
+  <updated>2015-06-29T12:20:41.284Z</updated>
   <id>http://www.tianrunlin.com//</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[pinterest在正式推出购买按钮前更新部分隐私策略]]></title>
+    <link href="http://www.tianrunlin.com/2015/06/29/pinterest-update-privacy-policy/"/>
+    <id>http://www.tianrunlin.com/2015/06/29/pinterest-update-privacy-policy/</id>
+    <published>2015-06-29T11:57:56.000Z</published>
+    <updated>2015-06-29T12:20:41.284Z</updated>
+    <content type="html"><![CDATA[<p>Hi there,<br>Soon, we’ll launch buyable Pins to U.S. Pinners on iPhone and iPad. Today, we’re rolling out a few updates to our Privacy Policy to help you understand how these buyable Pins will work. Here’s a quick look at those updates.</p>
+<p>pinterest终于要推出购买按钮了，在正式推出购买按钮前，它更新了其部分隐私策略。<br><a id="more"></a></p>
+<ol>
+<li>When you buy something on Pinterest, you’ll need to share some payment and contact info with us so that we can complete your order. We’ll save this info so you don’t have to type it in next time you make a purchase. We’ll also share this info with the seller, and they’ll treat it as if you bought from their website directly.</li>
+</ol>
+<p>1）当买家在pinterest首次使用购买按钮购物时，pinterest会保存买家的联系和支付信息以便下次可以快捷支付和购物，并且联系支付信息会和卖家直接共享。</p>
+<ol>
+<li>We also hope to make Promoted Pins even more relevant and useful to Pinners like you. For example, if you purchased a camping tent on Pinterest, we may show you Promoted Pins for other outdoorsy products.</li>
+</ol>
+<p>2）pinterest会根据买家的购买历史推荐相关物品，比如你在pinterest上购买了一个帐篷，那么pinterest可能会向你其他户外运动产品</p>
+<p>If you don’t want your purchases to be used to customize Pinterest, just go to “Order history” from your account settings and swipe to hide your purchases.<br>To see these updates, visit our Privacy Policy. To learn more about buyable Pins, check out our Help Center.</p>
+<p>当然，如果你不想接收相关产品推荐（比如某些少儿不宜的产品），你可以在“购买历史上”设置里面隐藏它。</p>
+<p>更多信息请浏览pinterest隐私策略：<a href="https://about.pinterest.com/en/privacy-policy" target="_blank" rel="external">https://about.pinterest.com/en/privacy-policy</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Hi there,<br>Soon, we’ll launch buyable Pins to U.S. Pinners on iPhone and iPad. Today, we’re rolling out a few updates to our Privacy Policy to help you understand how these buyable Pins will work. Here’s a quick look at those updates.</p>
+<p>pinterest终于要推出购买按钮了，在正式推出购买按钮前，它更新了其部分隐私策略。<br>]]>
+    
+    </summary>
+    
+      <category term="外贸电商" scheme="http://www.tianrunlin.com/tags/%E5%A4%96%E8%B4%B8%E7%94%B5%E5%95%86/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[邮件营销edm：使用sendcloud给自己博客的博友发送订阅邮件]]></title>
@@ -461,25 +491,6 @@
     </summary>
     
       <category term="blogger优化" scheme="http://www.tianrunlin.com/tags/blogger%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[新浪微博尾巴添加成功]]></title>
-    <link href="http://www.tianrunlin.com/2012/12/04/change-sina-weibo-tail/"/>
-    <id>http://www.tianrunlin.com/2012/12/04/change-sina-weibo-tail/</id>
-    <published>2012-12-04T15:39:17.000Z</published>
-    <updated>2015-06-12T13:20:22.991Z</updated>
-    <content type="html"><![CDATA[<p>一波四折，新浪微博终于添加成功了，先秀一下图片<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/0%E5%BE%AE%E5%8D%9A%E5%B0%BE%E5%B7%B4.png" alt=""><br>简要的说一下方法吧。<br>首先打开新浪开发者平台，网址是<a href="http://open.weibo.com/。" target="_blank" rel="external">http://open.weibo.com/。</a><br>登录后点击网站接入，然后点开始接入，它会要求添加代码验证网站所有权和审核个人身份，<br>境内的网站需要备案，所以我放弃了我在bae上搭建的博客blog.tianrunlin.com，使用doodle.tianrunlin.com，证明境外网站我采用的是显示网址的ip信息，个人身份审核过程大概需要1到3天。<br>审核通过后就可以部署微连接了，我选择的是“发布到微博”。<br>接下来就是坑爹的申请提交过程了。<br>下面是我被驳回三次的邮件和最后通过的邮件。</p>
-<p>2012年11月26日 下午3:35<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”未能通过我方的来源文案审核，其原因是：“为保证您的网站组件上线正常运营，建议测试用户达到5人以上”。请您依据我们的建议和《微博开放平台审核指南》，再次修改后重新提交审核申请。查看常见驳回理由说明及解决方案 <a href="http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（忘了添加测试用户了，）" target="_blank" rel="external">http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（忘了添加测试用户了，）</a></p>
-<p>2012年11月27日 上午10:49<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”未能通过我方的来源文案审核，其原因是：“没有看到合作组件上线或组件功能未实现，请更换应用图标，要求为80<em>80的网站logo”。请您依据我们的建议和《微博开放平台审核指南》，再次修改后重新提交审核申请。查看常见驳回理由说明及解决方案 <a href="http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（好吧，我logo为78" target="_blank" rel="external">http://t.cn/zluaxfa。感谢您对新浪微博开放平台的支持！（好吧，我logo为78</a></em>80，组件还没添加呢，我以为是先通过再添加组件呢）</p>
-<p>2012年12月3日 下午3:18<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”未能通过我方的应用来源文案审核，其原因是：“请更换应用图标，要求为80<em>80的网站logo，没有看到合作组件上线或组件功能未实现”。请您依据我们的建议和《微博开放平台审核指南》进行修改，待提交审核冻结结束后重新提交审核申请。感谢您对新浪微博开放平台的支持！（我擦，我logo已经检查了，真是80</em>80啊，组件也加了，估计是太小或者加载没有完成他们没看到。然后，然后，我的申请竟然被冻结了，在12月4日前禁止提交，无语了，为此我还专门发了封邮件给他们）</p>
-<p>最后终于等到这封邮件了</p>
-<p>2012年12月4日 下午4:01<br>尊敬的开发者您好：<br>　　您的应用“田润林的博客”已经通过我方的来源文案审核，经由您的应用所发出的微博信息将会显示相应的来源文案，同时，您可以查看《微博开放平台审核指南》，对您的应用进行优化。感谢您对新浪微博开放平台的支持！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>一波四折，新浪微博终于添加成功了，先秀一下图片<br><img src="http://files.myopera.com/tianrunlin/albums/13107372/0%E5%BE%AE%E5%8D%9A%E5%B0%BE%E5%B7%B4.png" alt="]]>
-    </summary>
     
   </entry>
   
