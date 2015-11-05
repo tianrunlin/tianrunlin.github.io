@@ -5,7 +5,7 @@
   <subtitle><![CDATA[运营推广、数据分析以及其他]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tianrunlin.com//"/>
-  <updated>2015-08-29T03:26:57.859Z</updated>
+  <updated>2015-11-05T16:16:00.740Z</updated>
   <id>http://www.tianrunlin.com//</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[aso笔记总结（简要版）]]></title>
+    <link href="http://www.tianrunlin.com/2015/11/06/aso-note/"/>
+    <id>http://www.tianrunlin.com/2015/11/06/aso-note/</id>
+    <published>2015-11-05T16:05:45.000Z</published>
+    <updated>2015-11-05T16:16:00.740Z</updated>
+    <content type="html"><![CDATA[<p>笔记主要来源于<a href="http://www.zhihu.com/topic/20015452/top-answers" target="_blank" rel="external">知乎上aso的精华问答</a>与@<a href="http://www.zhihu.com/people/niaogebiji" target="_blank" rel="external">鸟哥的笔记</a>，并加上我自己的理解</p>
+<p>0、由于pc端和移动端两种不同的产品形式，aso的重要性远远不如seo，不要在此花费太多精力。（个人鄙见：aso是门比seo更玄的玄学）</p>
+<p>1、aso重要性与seo差不多：T&gt;K&gt;D</p>
+<p>2、标题中关键词和关键词列表中可能不会叠加权重，所以标题中存在的关键词关键词列表中的不用（此条存疑）</p>
+<p>3、关键词分类：品牌关键词、行业关键词、竞品关键词（长尾关键词不要考虑了，内购iap堆积关键词？）</p>
+<p>4、借势优化：排名靠前但不同类的app，可以搭车优化</p>
+<a id="more"></a>
+<p>5、移动端和pc端的app store搜索结果不一样，使用的两种不同的算法。根据现实中的一般使用情景，建议以移动端搜索结果为准。</p>
+<p>6、修改关键词不通过后，因为不同审核人员标准宽严不完全一致，可以稍作修改，重新上传。</p>
+<p>7、由于刷评论太严重了，苹果可能降低了评论的权重了，所以评论可能没有那么重要了，另外公司员工不要再同一个wifi情况下评论 。</p>
+<p>8、关于安卓的aso，主要以下载量为准，辅以评星和关键词密度。（so前期刷下载量为主？）</p>
+<p>9、重要程度：标题&gt;关键词&gt;账号名字，描述几乎没有影响（此条存疑 ）</p>
+<p>10、喜马拉雅fm可能的策略：1）多app”站群”导量2）马甲app刷榜（类似玩法：摩根书院的内购iap）</p>
+<p>11、描述最好出现公司的联系方式，如公众号/微博账号/服务QQ/QQ群等。</p>
+<p>12、版本更新对排名影响：1）无影响 VS 2）更新后有3-7天保护期，此时导量效果更好</p>
+<p>13、aso常用工具集合：<br><a href="http://www.tune.com/" target="_blank" rel="external">http://www.tune.com/</a><br><a href="http://tools.appying.com/" target="_blank" rel="external">http://tools.appying.com/</a><br><a href="http://www.asou.com/" target="_blank" rel="external">http://www.asou.com/</a><br><a href="https://www.appannie.com/cn/" target="_blank" rel="external">https://www.appannie.com/cn/</a><br><a href="http://www.ann9.com/" target="_blank" rel="external">http://www.ann9.com/</a><br><a href="http://aso100.com/" target="_blank" rel="external">http://aso100.com/</a><br><a href="http://www.appduu.com/" target="_blank" rel="external">http://www.appduu.com/</a></p>
+<p>app推广新手，有什么不足的地方请多指教</p>
+<p>不断补充中<br>Tang @2015-11-6 0:12:00</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>笔记主要来源于<a href="http://www.zhihu.com/topic/20015452/top-answers">知乎上aso的精华问答</a>与@<a href="http://www.zhihu.com/people/niaogebiji">鸟哥的笔记</a>，并加上我自己的理解</p>
+<p>0、由于pc端和移动端两种不同的产品形式，aso的重要性远远不如seo，不要在此花费太多精力。（个人鄙见：aso是门比seo更玄的玄学）</p>
+<p>1、aso重要性与seo差不多：T&gt;K&gt;D</p>
+<p>2、标题中关键词和关键词列表中可能不会叠加权重，所以标题中存在的关键词关键词列表中的不用（此条存疑）</p>
+<p>3、关键词分类：品牌关键词、行业关键词、竞品关键词（长尾关键词不要考虑了，内购iap堆积关键词？）</p>
+<p>4、借势优化：排名靠前但不同类的app，可以搭车优化</p>]]>
+    
+    </summary>
+    
+      <category term="aso" scheme="http://www.tianrunlin.com/tags/aso/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[1122篇互联网干货，涉及技术产品运营等多个方面，腾讯大牛亲身分享]]></title>
@@ -1597,27 +1636,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>这是<a href="http://doodle.tianrunlin.com/2012/12/04/change-sina-weibo-tail" target="_blank" rel="external">doodle博客日志下载成功</a>的续篇，日志下载到本地后，]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[doodle博客日志下载成功]]></title>
-    <link href="http://www.tianrunlin.com/2012/12/05/succeed-downloading-blog-logs/"/>
-    <id>http://www.tianrunlin.com/2012/12/05/succeed-downloading-blog-logs/</id>
-    <published>2012-12-05T13:34:24.000Z</published>
-    <updated>2015-06-13T04:32:05.231Z</updated>
-    <content type="html"><![CDATA[<p>按照<a href="http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。" target="_blank" rel="external">http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。</a><br>keakon把上传、下载、管理python应用的官方指南链接给我（Uploading, Downloading, and Managing a Python App，<a href="https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）" target="_blank" rel="external">https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）</a><br>关于下载日志官方文档是这么写的<br><a id="more"></a></p>
-<p>appcfg.py request_logs myapp/ mylogs.txt</p>
-<p><a href="http://doodle.tianrunlin.com/2012/12/02/how-to-Download-Export-google-App-Engine-gae-logs" target="_blank" rel="external">这个和如何导出（下载）GoogleAppEngine（gae）日志到本地</a>并没有什么不同吗，但是有这么一句：</p>
-<p>To upload application files, run the appcfg.py command with the update action and the name of your application’s root directory. The root directory should contain the app.yaml file for the application.</p>
-<p>也就说命令必须要包含app的路径。<br>我的Google App Engine路径是C:\Application Software\GoogleAppEngine-1.7.2，doodle程序路径是D:\Doodle_1.5_zh-CN<br>所以命令应该是，打开命令窗口，输入：</p>
-<p>cd C:\Application Software\GoogleAppEngine-1.7.2<br>appcfg.py —num_days=0 request_logs D:\Doodle_1.5_zh-CN/ mylogs.txt</p>
-<p>这样就把所有的日志保存到C:\Application Software\GoogleAppEngine-1.7.2\mylogs.txt文本中了。<br>我的<a href="http://doodle.tianrunlin.com/" target="_blank" rel="external">doodle博客</a>日志大小在10m左右，一共67580条记录，时间段是从03/Oct/2012:00:32:05到05/Dec/2012:05:01:54。<br>接下来，我准备对下载的日志进行分析了。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>按照<a href="http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。">http://blog.dantup.com/2009/12/downloadingexporting-app-engine-logs.html的方法，无法成功地导出日志，只好向keakon请教了。</a><br>keakon把上传、下载、管理python应用的官方指南链接给我（Uploading, Downloading, and Managing a Python App，<a href="https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）">https://developers.google.com/appengine/docs/python/tools/uploadinganapp#Downloading_Logs），并且提示可能要开代理（坑爹的gfw,无所不封啊）</a><br>关于下载日志官方文档是这么写的<br>]]>
-    
     </summary>
     
   </entry>

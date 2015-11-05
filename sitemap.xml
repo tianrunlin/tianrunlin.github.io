@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.tianrunlin.com/2015/11/06/aso-note/</loc>
+    <lastmod>2015-11-05T16:16:00.740Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.tianrunlin.com/2015/08/29/tencent-yuedu/</loc>
     <lastmod>2015-08-29T03:26:57.859Z</lastmod>
   </url>
@@ -87,12 +92,12 @@
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/20/gae-tips_20/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/31/googleplus-short-url/</loc>
     <lastmod>2015-06-13T04:30:18.472Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/31/googleplus-short-url/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/20/gae-tips_20/</loc>
     <lastmod>2015-06-13T04:30:18.472Z</lastmod>
   </url>
   
@@ -152,12 +157,12 @@
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/17/blogger-autoaddlink/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/09/bloggerblogspot/</loc>
     <lastmod>2015-06-13T04:30:18.460Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/09/bloggerblogspot/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/17/blogger-autoaddlink/</loc>
     <lastmod>2015-06-13T04:30:18.460Z</lastmod>
   </url>
   
@@ -167,12 +172,12 @@
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/22/blog-runtime-display/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/21/blogspot-meta/</loc>
     <lastmod>2015-06-13T04:30:18.458Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/21/blogspot-meta/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/22/blog-runtime-display/</loc>
     <lastmod>2015-06-13T04:30:18.458Z</lastmod>
   </url>
   
@@ -182,12 +187,12 @@
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/17/blog-log/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/03/blog-post_3/</loc>
     <lastmod>2015-06-13T04:30:18.456Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/03/blog-post_3/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/17/blog-log/</loc>
     <lastmod>2015-06-13T04:30:18.456Z</lastmod>
   </url>
   
@@ -272,22 +277,7 @@
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/08/bloggerblogspotwidget/</loc>
-    <lastmod>2015-06-12T12:06:04.206Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.tianrunlin.com/2012/10/04/gae_4/</loc>
-    <lastmod>2015-06-12T12:06:04.206Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.tianrunlin.com/2012/10/22/goagent/</loc>
-    <lastmod>2015-06-12T12:06:04.206Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.tianrunlin.com/2012/09/29/blog-post_29/</loc>
     <lastmod>2015-06-12T12:06:04.206Z</lastmod>
   </url>
   
@@ -297,13 +287,23 @@
   </url>
   
   <url>
+    <loc>http://www.tianrunlin.com/2012/09/29/blog-post_29/</loc>
+    <lastmod>2015-06-12T12:06:04.206Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tianrunlin.com/2012/10/08/bloggerblogspotwidget/</loc>
+    <lastmod>2015-06-12T12:06:04.206Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.tianrunlin.com/2012/10/01/blog-post/</loc>
     <lastmod>2015-06-12T12:06:04.206Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/05/blogger/</loc>
-    <lastmod>2015-06-12T12:06:04.205Z</lastmod>
+    <loc>http://www.tianrunlin.com/2012/10/22/goagent/</loc>
+    <lastmod>2015-06-12T12:06:04.206Z</lastmod>
   </url>
   
   <url>
@@ -312,7 +312,12 @@
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/17/contact-me/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/05/blogger/</loc>
+    <lastmod>2015-06-12T12:06:04.205Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.tianrunlin.com/2012/10/05/bloggersitemap/</loc>
     <lastmod>2015-06-12T12:06:04.205Z</lastmod>
   </url>
   
@@ -322,12 +327,12 @@
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/06/gae/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/17/contact-me/</loc>
     <lastmod>2015-06-12T12:06:04.205Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.tianrunlin.com/2012/10/05/bloggersitemap/</loc>
+    <loc>http://www.tianrunlin.com/2012/10/06/gae/</loc>
     <lastmod>2015-06-12T12:06:04.205Z</lastmod>
   </url>
   
